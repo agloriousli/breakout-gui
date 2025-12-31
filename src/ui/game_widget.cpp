@@ -1166,13 +1166,15 @@ void GameWidget::drawOverlay(QPainter& painter, const QString& title, const QStr
     QRectF bodyRect(40, height() / 2 - 10, width() - 80, bodyHeight + 20);
     painter.drawText(bodyRect, body, textOption);
     
-    // Draw spacebar instruction at bottom
-    painter.setPen(QColor(0, 200, 100));  // Green color for instruction
-    QFont instructionFont("Courier New", 12);
-    instructionFont.setBold(true);
-    painter.setFont(instructionFont);
-    painter.drawText(rect().adjusted(40, 0, -40, -200), Qt::AlignBottom | Qt::AlignHCenter, 
-                     tr("Press spacebar to return to game"));
+    // Draw spacebar instruction at bottom (only for non-game over overlays)
+    if (title != tr("Game Over")) {
+        painter.setPen(QColor(0, 200, 100));  // Green color for instruction
+        QFont instructionFont("Courier New", 12);
+        instructionFont.setBold(true);
+        painter.setFont(instructionFont);
+        painter.drawText(rect().adjusted(40, 0, -40, -200), Qt::AlignBottom | Qt::AlignHCenter, 
+                         tr("Press spacebar to return to game"));
+    }
     
     painter.restore();
 }

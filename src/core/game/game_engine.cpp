@@ -37,7 +37,7 @@ unique_ptr<Brick> createBrickFromState(const BrickState& state) {
 // ============================================================================
 // Game Constants
 // ============================================================================
-constexpr double kPowerupSpawnChance = 1.0;      // 100% chance to spawn powerup
+constexpr double kPowerupSpawnChance = 0.5;      // 100% chance to spawn powerup
 constexpr double kPowerupFallSpeed = 120.0;      // Pixels per second
 constexpr double kExpandWidthBonus = 70.0;       // Extra paddle width (pixels)
 constexpr double kExpandDuration = 12.0;         // Expand effect duration (seconds)
