@@ -1,0 +1,5 @@
+if(EXISTS "/Users/glorial/breakout-gui/build/breakout_core_tests[1]_tests.cmake")
+  include("/Users/glorial/breakout-gui/build/breakout_core_tests[1]_tests.cmake")
+else()
+  add_test(breakout_core_tests_NOT_BUILT breakout_core_tests_NOT_BUILT)
+endif()

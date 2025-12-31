@@ -1,0 +1,12 @@
+PhysicsEngineTest.PaddleReflectionAngles 21 0.000339228
+PhysicsEngineTest.WallCollisionFlipsVelocity 21 0.0002942
+BrickTest.DurableAndIndestructibleBehavior 21 0.000202153
+GameEngineTest.LevelCompletesWhenBreakableGone 21 0.000256514
+GameEngineTest.LifeDecrementsWhenBallFalls 21 0.000291629
+BrickFactoryTest.CreatesCorrectTypes 21 0.00029451
+GameEngineTest.StartingLevelFallsBackWhenMissing 18 0.000228694
+GameEngineTest.StartingLevelAppliesWhenPresent 18 0.000285877
+GameEngineTest.LaunchUsesConfiguredBallSpeed 18 0.000277836
+RandomTest.DeterministicWithSeed 16 0.000255669
+EndgameManagerTest.SnapshotRoundTripStruct 12 0.000396632
+---

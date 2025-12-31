@@ -1,0 +1,165 @@
+Start testing: Dec 30 18:17 CST
+----------------------------------------------------------
+1/6 Testing: PhysicsEngineTest.PaddleReflectionAngles
+1/6 Test: PhysicsEngineTest.PaddleReflectionAngles
+Command: "/Users/glorial/breakout-gui/build/breakout_core_tests" "--gtest_filter=PhysicsEngineTest.PaddleReflectionAngles" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build
+"PhysicsEngineTest.PaddleReflectionAngles" start time: Dec 30 18:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PhysicsEngineTest.PaddleReflectionAngles
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PhysicsEngineTest
+[ RUN      ] PhysicsEngineTest.PaddleReflectionAngles
+[       OK ] PhysicsEngineTest.PaddleReflectionAngles (0 ms)
+[----------] 1 test from PhysicsEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PhysicsEngineTest.PaddleReflectionAngles" end time: Dec 30 18:17 CST
+"PhysicsEngineTest.PaddleReflectionAngles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/6 Testing: PhysicsEngineTest.WallCollisionFlipsVelocity
+2/6 Test: PhysicsEngineTest.WallCollisionFlipsVelocity
+Command: "/Users/glorial/breakout-gui/build/breakout_core_tests" "--gtest_filter=PhysicsEngineTest.WallCollisionFlipsVelocity" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build
+"PhysicsEngineTest.WallCollisionFlipsVelocity" start time: Dec 30 18:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PhysicsEngineTest.WallCollisionFlipsVelocity
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PhysicsEngineTest
+[ RUN      ] PhysicsEngineTest.WallCollisionFlipsVelocity
+[       OK ] PhysicsEngineTest.WallCollisionFlipsVelocity (0 ms)
+[----------] 1 test from PhysicsEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"PhysicsEngineTest.WallCollisionFlipsVelocity" end time: Dec 30 18:17 CST
+"PhysicsEngineTest.WallCollisionFlipsVelocity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/6 Testing: BrickTest.DurableAndIndestructibleBehavior
+3/6 Test: BrickTest.DurableAndIndestructibleBehavior
+Command: "/Users/glorial/breakout-gui/build/breakout_core_tests" "--gtest_filter=BrickTest.DurableAndIndestructibleBehavior" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build
+"BrickTest.DurableAndIndestructibleBehavior" start time: Dec 30 18:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BrickTest.DurableAndIndestructibleBehavior
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BrickTest
+[ RUN      ] BrickTest.DurableAndIndestructibleBehavior
+[       OK ] BrickTest.DurableAndIndestructibleBehavior (0 ms)
+[----------] 1 test from BrickTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BrickTest.DurableAndIndestructibleBehavior" end time: Dec 30 18:17 CST
+"BrickTest.DurableAndIndestructibleBehavior" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/6 Testing: GameEngineTest.LevelCompletesWhenBreakableGone
+4/6 Test: GameEngineTest.LevelCompletesWhenBreakableGone
+Command: "/Users/glorial/breakout-gui/build/breakout_core_tests" "--gtest_filter=GameEngineTest.LevelCompletesWhenBreakableGone" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build
+"GameEngineTest.LevelCompletesWhenBreakableGone" start time: Dec 30 18:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameEngineTest.LevelCompletesWhenBreakableGone
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameEngineTest
+[ RUN      ] GameEngineTest.LevelCompletesWhenBreakableGone
+[       OK ] GameEngineTest.LevelCompletesWhenBreakableGone (0 ms)
+[----------] 1 test from GameEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GameEngineTest.LevelCompletesWhenBreakableGone" end time: Dec 30 18:17 CST
+"GameEngineTest.LevelCompletesWhenBreakableGone" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/6 Testing: GameEngineTest.LifeDecrementsWhenBallFalls
+5/6 Test: GameEngineTest.LifeDecrementsWhenBallFalls
+Command: "/Users/glorial/breakout-gui/build/breakout_core_tests" "--gtest_filter=GameEngineTest.LifeDecrementsWhenBallFalls" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build
+"GameEngineTest.LifeDecrementsWhenBallFalls" start time: Dec 30 18:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameEngineTest.LifeDecrementsWhenBallFalls
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameEngineTest
+[ RUN      ] GameEngineTest.LifeDecrementsWhenBallFalls
+[       OK ] GameEngineTest.LifeDecrementsWhenBallFalls (0 ms)
+[----------] 1 test from GameEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GameEngineTest.LifeDecrementsWhenBallFalls" end time: Dec 30 18:17 CST
+"GameEngineTest.LifeDecrementsWhenBallFalls" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/6 Testing: BrickFactoryTest.CreatesCorrectTypes
+6/6 Test: BrickFactoryTest.CreatesCorrectTypes
+Command: "/Users/glorial/breakout-gui/build/breakout_core_tests" "--gtest_filter=BrickFactoryTest.CreatesCorrectTypes" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build
+"BrickFactoryTest.CreatesCorrectTypes" start time: Dec 30 18:17 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BrickFactoryTest.CreatesCorrectTypes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BrickFactoryTest
+[ RUN      ] BrickFactoryTest.CreatesCorrectTypes
+[       OK ] BrickFactoryTest.CreatesCorrectTypes (0 ms)
+[----------] 1 test from BrickFactoryTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BrickFactoryTest.CreatesCorrectTypes" end time: Dec 30 18:17 CST
+"BrickFactoryTest.CreatesCorrectTypes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 30 18:17 CST

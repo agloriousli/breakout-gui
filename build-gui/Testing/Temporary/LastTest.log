@@ -1,0 +1,307 @@
+Start testing: Dec 31 19:46 CST
+----------------------------------------------------------
+1/11 Testing: PhysicsEngineTest.PaddleReflectionAngles
+1/11 Test: PhysicsEngineTest.PaddleReflectionAngles
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=PhysicsEngineTest.PaddleReflectionAngles" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"PhysicsEngineTest.PaddleReflectionAngles" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PhysicsEngineTest.PaddleReflectionAngles
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PhysicsEngineTest
+[ RUN      ] PhysicsEngineTest.PaddleReflectionAngles
+[       OK ] PhysicsEngineTest.PaddleReflectionAngles (0 ms)
+[----------] 1 test from PhysicsEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PhysicsEngineTest.PaddleReflectionAngles" end time: Dec 31 19:46 CST
+"PhysicsEngineTest.PaddleReflectionAngles" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/11 Testing: PhysicsEngineTest.WallCollisionFlipsVelocity
+2/11 Test: PhysicsEngineTest.WallCollisionFlipsVelocity
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=PhysicsEngineTest.WallCollisionFlipsVelocity" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"PhysicsEngineTest.WallCollisionFlipsVelocity" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = PhysicsEngineTest.WallCollisionFlipsVelocity
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PhysicsEngineTest
+[ RUN      ] PhysicsEngineTest.WallCollisionFlipsVelocity
+[       OK ] PhysicsEngineTest.WallCollisionFlipsVelocity (0 ms)
+[----------] 1 test from PhysicsEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"PhysicsEngineTest.WallCollisionFlipsVelocity" end time: Dec 31 19:46 CST
+"PhysicsEngineTest.WallCollisionFlipsVelocity" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/11 Testing: BrickTest.DurableAndIndestructibleBehavior
+3/11 Test: BrickTest.DurableAndIndestructibleBehavior
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=BrickTest.DurableAndIndestructibleBehavior" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"BrickTest.DurableAndIndestructibleBehavior" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BrickTest.DurableAndIndestructibleBehavior
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BrickTest
+[ RUN      ] BrickTest.DurableAndIndestructibleBehavior
+[BRICK] applyHit() setting destroyed_=true
+[       OK ] BrickTest.DurableAndIndestructibleBehavior (0 ms)
+[----------] 1 test from BrickTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"BrickTest.DurableAndIndestructibleBehavior" end time: Dec 31 19:46 CST
+"BrickTest.DurableAndIndestructibleBehavior" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/11 Testing: GameEngineTest.LevelCompletesWhenBreakableGone
+4/11 Test: GameEngineTest.LevelCompletesWhenBreakableGone
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=GameEngineTest.LevelCompletesWhenBreakableGone" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"GameEngineTest.LevelCompletesWhenBreakableGone" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameEngineTest.LevelCompletesWhenBreakableGone
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameEngineTest
+[ RUN      ] GameEngineTest.LevelCompletesWhenBreakableGone
+[       OK ] GameEngineTest.LevelCompletesWhenBreakableGone (0 ms)
+[----------] 1 test from GameEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"GameEngineTest.LevelCompletesWhenBreakableGone" end time: Dec 31 19:46 CST
+"GameEngineTest.LevelCompletesWhenBreakableGone" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/11 Testing: GameEngineTest.LifeDecrementsWhenBallFalls
+5/11 Test: GameEngineTest.LifeDecrementsWhenBallFalls
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=GameEngineTest.LifeDecrementsWhenBallFalls" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"GameEngineTest.LifeDecrementsWhenBallFalls" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameEngineTest.LifeDecrementsWhenBallFalls
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameEngineTest
+[ RUN      ] GameEngineTest.LifeDecrementsWhenBallFalls
+
+[LIFE LOST] Ball fell off bottom
+  Lives remaining: 2
+  Paddle repositioned to: (100, 268)
+  Ball repositioned to: (200, 259)
+  Ball attached to paddle: YES
+[       OK ] GameEngineTest.LifeDecrementsWhenBallFalls (0 ms)
+[----------] 1 test from GameEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"GameEngineTest.LifeDecrementsWhenBallFalls" end time: Dec 31 19:46 CST
+"GameEngineTest.LifeDecrementsWhenBallFalls" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/11 Testing: GameEngineTest.StartingLevelFallsBackWhenMissing
+6/11 Test: GameEngineTest.StartingLevelFallsBackWhenMissing
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=GameEngineTest.StartingLevelFallsBackWhenMissing" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"GameEngineTest.StartingLevelFallsBackWhenMissing" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameEngineTest.StartingLevelFallsBackWhenMissing
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameEngineTest
+[ RUN      ] GameEngineTest.StartingLevelFallsBackWhenMissing
+[       OK ] GameEngineTest.StartingLevelFallsBackWhenMissing (0 ms)
+[----------] 1 test from GameEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"GameEngineTest.StartingLevelFallsBackWhenMissing" end time: Dec 31 19:46 CST
+"GameEngineTest.StartingLevelFallsBackWhenMissing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/11 Testing: GameEngineTest.StartingLevelAppliesWhenPresent
+7/11 Test: GameEngineTest.StartingLevelAppliesWhenPresent
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=GameEngineTest.StartingLevelAppliesWhenPresent" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"GameEngineTest.StartingLevelAppliesWhenPresent" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameEngineTest.StartingLevelAppliesWhenPresent
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameEngineTest
+[ RUN      ] GameEngineTest.StartingLevelAppliesWhenPresent
+[       OK ] GameEngineTest.StartingLevelAppliesWhenPresent (0 ms)
+[----------] 1 test from GameEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"GameEngineTest.StartingLevelAppliesWhenPresent" end time: Dec 31 19:46 CST
+"GameEngineTest.StartingLevelAppliesWhenPresent" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/11 Testing: GameEngineTest.LaunchUsesConfiguredBallSpeed
+8/11 Test: GameEngineTest.LaunchUsesConfiguredBallSpeed
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=GameEngineTest.LaunchUsesConfiguredBallSpeed" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"GameEngineTest.LaunchUsesConfiguredBallSpeed" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = GameEngineTest.LaunchUsesConfiguredBallSpeed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from GameEngineTest
+[ RUN      ] GameEngineTest.LaunchUsesConfiguredBallSpeed
+[       OK ] GameEngineTest.LaunchUsesConfiguredBallSpeed (0 ms)
+[----------] 1 test from GameEngineTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"GameEngineTest.LaunchUsesConfiguredBallSpeed" end time: Dec 31 19:46 CST
+"GameEngineTest.LaunchUsesConfiguredBallSpeed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/11 Testing: RandomTest.DeterministicWithSeed
+9/11 Test: RandomTest.DeterministicWithSeed
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=RandomTest.DeterministicWithSeed" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"RandomTest.DeterministicWithSeed" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = RandomTest.DeterministicWithSeed
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from RandomTest
+[ RUN      ] RandomTest.DeterministicWithSeed
+[       OK ] RandomTest.DeterministicWithSeed (0 ms)
+[----------] 1 test from RandomTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"RandomTest.DeterministicWithSeed" end time: Dec 31 19:46 CST
+"RandomTest.DeterministicWithSeed" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/11 Testing: EndgameManagerTest.SnapshotRoundTripStruct
+10/11 Test: EndgameManagerTest.SnapshotRoundTripStruct
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=EndgameManagerTest.SnapshotRoundTripStruct" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"EndgameManagerTest.SnapshotRoundTripStruct" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EndgameManagerTest.SnapshotRoundTripStruct
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EndgameManagerTest
+[ RUN      ] EndgameManagerTest.SnapshotRoundTripStruct
+[       OK ] EndgameManagerTest.SnapshotRoundTripStruct (0 ms)
+[----------] 1 test from EndgameManagerTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EndgameManagerTest.SnapshotRoundTripStruct" end time: Dec 31 19:46 CST
+"EndgameManagerTest.SnapshotRoundTripStruct" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/11 Testing: BrickFactoryTest.CreatesCorrectTypes
+11/11 Test: BrickFactoryTest.CreatesCorrectTypes
+Command: "/Users/glorial/breakout-gui/build-gui/breakout_core_tests" "--gtest_filter=BrickFactoryTest.CreatesCorrectTypes" "--gtest_also_run_disabled_tests"
+Directory: /Users/glorial/breakout-gui/build-gui
+"BrickFactoryTest.CreatesCorrectTypes" start time: Dec 31 19:46 CST
+Output:
+----------------------------------------------------------
+Running main() from /Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = BrickFactoryTest.CreatesCorrectTypes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from BrickFactoryTest
+[ RUN      ] BrickFactoryTest.CreatesCorrectTypes
+[       OK ] BrickFactoryTest.CreatesCorrectTypes (0 ms)
+[----------] 1 test from BrickFactoryTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"BrickFactoryTest.CreatesCorrectTypes" end time: Dec 31 19:46 CST
+"BrickFactoryTest.CreatesCorrectTypes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 31 19:46 CST

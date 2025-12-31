@@ -1,0 +1,7 @@
+PhysicsEngineTest.PaddleReflectionAngles 2 0.00332692
+PhysicsEngineTest.WallCollisionFlipsVelocity 3 0.00143932
+BrickTest.DurableAndIndestructibleBehavior 3 0.00122597
+GameEngineTest.LevelCompletesWhenBreakableGone 3 0.00123074
+GameEngineTest.LifeDecrementsWhenBallFalls 3 0.001264
+BrickFactoryTest.CreatesCorrectTypes 3 0.00148108
+---

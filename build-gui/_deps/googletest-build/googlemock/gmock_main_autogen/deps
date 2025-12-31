@@ -1,0 +1,12 @@
+gmock_main_autogen/timestamp: \
+	/Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googlemock/CMakeLists.txt \
+	/Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googlemock/cmake/gmock.pc.in \
+	/Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in \
+	/Users/glorial/breakout-gui/build-gui/_deps/googletest-src/googlemock/src/gmock_main.cc \
+	/opt/homebrew/share/cmake/Modules/CheckCSourceCompiles.cmake \
+	/opt/homebrew/share/cmake/Modules/CheckIncludeFile.cmake \
+	/opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake \
+	/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
+	/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake \
+	/opt/homebrew/share/cmake/Modules/FindThreads.cmake \
+	/opt/homebrew/bin/cmake

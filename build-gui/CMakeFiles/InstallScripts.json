@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/glorial/breakout-gui/build-gui/cmake_install.cmake",
+		"/Users/glorial/breakout-gui/build-gui/_deps/googletest-build/cmake_install.cmake",
+		"/Users/glorial/breakout-gui/build-gui/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/glorial/breakout-gui/build-gui/_deps/googletest-build/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

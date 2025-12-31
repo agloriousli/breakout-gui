@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/glorial/breakout-gui/build-gui/_deps/googletest-subbuild/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
