@@ -17,6 +17,7 @@
 #include <QStringList>
 #include <QLinearGradient>
 #include <QPolygonF>
+#include <QUrl>
 
 using namespace std;
 using breakout::Brick;
@@ -107,6 +108,18 @@ GameWidget::GameWidget(QWidget* parent) : QWidget(parent) {
     // Start timers
     frameTimer_.start();
     effectsTimer_.start();
+    
+    // Initialize sound effects
+    ballHitSound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/ball_hit.wav")));
+    ballHitSound_.setVolume(1.0f);
+    gameOverSound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/game_over.wav")));
+    gameOverSound_.setVolume(0.7f);
+    powerupSound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/powerup.wav")));
+    powerupSound_.setVolume(0.6f);
+    victorySound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/victory.wav")));
+    victorySound_.setVolume(0.5f);
+    lifeLostSound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/life_lost.wav")));
+    lifeLostSound_.setVolume(0.7f);
 
     // Create and style pause button (clean blue style)
     pauseButton_ = new QPushButton(tr("PAUSE"), this);
@@ -279,6 +292,7 @@ void GameWidget::loadEndgame(const QString& filename, const breakout::EndgameSna
 void GameWidget::startGame() {
     applyEngineConfig();
     state_ = PlayState::PreLaunch;
+    activeOverlay_ = OverlayType::None;
     engine_.newGame();
     useSnapshotBounds_ = false;
     loadedEndgame_.reset();
@@ -399,20 +413,16 @@ void GameWidget::tick() {
         ballTrail_.pop_front();
     }
 
-    // Track current state for effect detection
-    int currentBrickCount = static_cast<int>(engine_.bricks().size());
+    // Track current score to detect brick destruction
     int currentScore = engine_.score();
     
     engine_.update(deltaSeconds);
 
-    // Detect brick destruction and spawn effects
-    if (currentBrickCount > static_cast<int>(engine_.bricks().size())) {
-        // Bricks were destroyed - spawn impact at ball position
-        spawnImpact(ballCenter);
-    }
-    
-    // Detect score change for popups
+    // Detect brick destruction and spawn effects (score increases when bricks are destroyed)
     if (currentScore < engine_.score()) {
+        // Bricks were destroyed - spawn impact at ball position and play sound
+        spawnImpact(ballCenter);
+        ballHitSound_.play();
         int pointsGained = engine_.score() - currentScore;
         spawnScorePopup(ballCenter, pointsGained);
     }
@@ -463,6 +473,7 @@ void GameWidget::tick() {
         scorePopups_.clear();  // Clear score popups
         impactFlashes_.clear();  // Clear impact effects
         particles_.clear();  // Clear particles
+        lifeLostSound_.play();
     }
     lastLives_ = engine_.lives();
 
@@ -470,6 +481,7 @@ void GameWidget::tick() {
         lifeLossFlash_ = false;
         state_ = PlayState::GameOver;
         activeOverlay_ = OverlayType::GameOver;
+        gameOverSound_.play();
         emit gameOver();
     }
 
@@ -1258,6 +1270,7 @@ void GameWidget::showPowerBanner(const QString& text, const QColor& color) {
     powerBannerColor_ = color;
     powerBannerVisible_ = true;
     powerBannerTimer_.restart();
+    powerupSound_.play();
 }
 
 void GameWidget::enterLevelCompleteState() {
@@ -1265,6 +1278,7 @@ void GameWidget::enterLevelCompleteState() {
         finalLevel_ = true;
         state_ = PlayState::Victory;
         activeOverlay_ = OverlayType::Victory;
+        victorySound_.play();
         updateButtonsForState();
         return;
     }
@@ -1273,6 +1287,7 @@ void GameWidget::enterLevelCompleteState() {
     if (finalLevel_) {
         state_ = PlayState::Victory;
         activeOverlay_ = OverlayType::Victory;
+        victorySound_.play();
     } else {
         state_ = PlayState::LevelComplete;
         activeOverlay_ = OverlayType::LevelComplete;

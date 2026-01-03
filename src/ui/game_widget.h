@@ -5,6 +5,7 @@
 #include <QTimer>
 #include <QWidget>
 #include <QPushButton>
+#include <QSoundEffect>
 #include <deque>
 #include <vector>
 #include <map>
@@ -149,4 +150,11 @@ private:
     std::optional<breakout::EndgameSnapshot> loadedEndgame_;
     bool endgameMode_ {false};
     QString loadedEndgameFilename_;
+    
+    // Sound effects
+    QSoundEffect ballHitSound_;
+    QSoundEffect gameOverSound_;
+    QSoundEffect powerupSound_;
+    QSoundEffect victorySound_;
+    QSoundEffect lifeLostSound_;
 };

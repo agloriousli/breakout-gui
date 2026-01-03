@@ -18,6 +18,19 @@ SweptAABBResult sweptAABB(const Rect& movingRect, const Vector2D& velocity, cons
     Rect expanded { staticRect.x - movingRect.width, staticRect.y - movingRect.height,
                     staticRect.width + movingRect.width, staticRect.height + movingRect.height };
 
+    // When velocity is zero on an axis, check if we're already overlapping on that axis
+    // If not overlapping, no collision is possible
+    if (velocity.x() == 0.0) {
+        if (movingRect.x < expanded.left() || movingRect.x > expanded.right()) {
+            return result;  // No overlap on x-axis and no x movement = no collision
+        }
+    }
+    if (velocity.y() == 0.0) {
+        if (movingRect.y < expanded.top() || movingRect.y > expanded.bottom()) {
+            return result;  // No overlap on y-axis and no y movement = no collision
+        }
+    }
+
     Vector2D invEntry;
     Vector2D invExit;
 

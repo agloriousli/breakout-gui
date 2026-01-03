@@ -13,7 +13,7 @@ option(BUILD_TESTING "Build tests" ON)
 option(BUILD_APP "Build Qt GUI application" OFF)
 
 if(BUILD_APP)
-    find_package(Qt6 COMPONENTS Core Gui Widgets REQUIRED)
+    find_package(Qt6 COMPONENTS Core Gui Widgets Multimedia REQUIRED)
 endif()
 
 add_library(breakout_core
@@ -54,6 +54,7 @@ if(BUILD_APP)
         Qt6::Core
         Qt6::Gui
         Qt6::Widgets
+        Qt6::Multimedia
     )
 
     target_compile_options(breakout_app PRIVATE -Wall -Wextra -Wpedantic)
