@@ -11,6 +11,8 @@
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 
+using namespace std;
+
 namespace {
 constexpr int kMinSize = 8;
 constexpr int kMaxSize = 20;
@@ -32,12 +34,15 @@ EndgameEditorWidget::EndgameEditorWidget(QWidget* parent) : QWidget(parent) {
     widthSpin_ = new QSpinBox(this);
     heightSpin_ = new QSpinBox(this);
     levelSpin_ = new QSpinBox(this);
+    livesSpin_ = new QSpinBox(this);
     widthSpin_->setRange(kMinSize, kMaxSize);
     heightSpin_->setRange(kMinSize, kMaxSize);
     levelSpin_->setRange(1, 999);
+    livesSpin_->setRange(1, 5);
     widthSpin_->setValue(12);
     heightSpin_->setValue(12);
     levelSpin_->setValue(1);
+    livesSpin_->setValue(3);
 
     auto* normalBtn = new QPushButton(tr("@"), this);
     auto* durableBtn = new QPushButton(tr("#"), this);
@@ -61,6 +66,8 @@ EndgameEditorWidget::EndgameEditorWidget(QWidget* parent) : QWidget(parent) {
     topRow->addWidget(heightSpin_);
     topRow->addWidget(new QLabel(tr("Start Level"), this));
     topRow->addWidget(levelSpin_);
+    topRow->addWidget(new QLabel(tr("Lives"), this));
+    topRow->addWidget(livesSpin_);
     topRow->addSpacing(12);
     topRow->addWidget(normalBtn);
     topRow->addWidget(durableBtn);
@@ -214,7 +221,7 @@ breakout::EndgameSnapshot EndgameEditorWidget::buildSnapshot(const QString& name
     snap.configStartingLevel = levelSpin_->value();
     snap.level = levelSpin_->value();
     snap.score = 0;
-    snap.lives = 3;
+    snap.lives = livesSpin_->value();
 
     int rows = static_cast<int>(grid_.size());
     int cols = rows > 0 ? static_cast<int>(grid_[0].size()) : 0;
@@ -261,6 +268,7 @@ void EndgameEditorWidget::loadSnapshot(const breakout::EndgameSnapshot& snap) {
     widthSpin_->setValue(cols);
     heightSpin_->setValue(rows);
     levelSpin_->setValue(std::max(1, snap.level));
+    livesSpin_->setValue(std::max(1, snap.lives));
 
     grid_.assign(rows, std::string(static_cast<size_t>(cols), ' '));
     powerupMap_.clear();

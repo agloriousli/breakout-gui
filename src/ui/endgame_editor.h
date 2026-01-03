@@ -49,6 +49,7 @@ private:
     QSpinBox* widthSpin_ {nullptr};
     QSpinBox* heightSpin_ {nullptr};
     QSpinBox* levelSpin_ {nullptr};
+    QSpinBox* livesSpin_ {nullptr};
     QComboBox* powerupCombo_ {nullptr};
     QLabel* brushLabel_ {nullptr};
     Brush brush_ {Brush::Normal};

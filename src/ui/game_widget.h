@@ -6,6 +6,8 @@
 #include <QWidget>
 #include <QPushButton>
 #include <QSoundEffect>
+#include <QMediaPlayer>
+#include <QAudioOutput>
 #include <deque>
 #include <vector>
 #include <map>
@@ -157,4 +159,8 @@ private:
     QSoundEffect powerupSound_;
     QSoundEffect victorySound_;
     QSoundEffect lifeLostSound_;
+    
+    // Background music
+    QMediaPlayer* bgmPlayer_;
+    QAudioOutput* bgmAudioOutput_;
 };

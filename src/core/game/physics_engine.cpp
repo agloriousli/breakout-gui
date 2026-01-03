@@ -1,3 +1,17 @@
+/**
+ * @file physics_engine.cpp
+ * @brief Physics simulation for ball movement and collision responses.
+ * 
+ * This file implements the PhysicsEngine class which handles:
+ * - Ball-wall collision detection and response
+ * - Ball-paddle collision with angle-based reflection
+ * - Ball-brick collision using swept AABB algorithm
+ * - "Big ball" mode destruction effect
+ * 
+ * The physics system uses continuous collision detection (CCD) via
+ * swept AABB to prevent tunneling when the ball moves at high speeds.
+ */
+
 #include "physics_engine.h"
 
 #include <algorithm>
@@ -16,8 +30,26 @@ inline double clamp(double value, double minVal, double maxVal) {
 
 }
 
+/**
+ * @brief Calculate the new ball velocity after bouncing off the paddle.
+ * 
+ * This function implements angle-based reflection where the ball's exit angle
+ * depends on WHERE it hits the paddle:
+ * - Center hit: Ball bounces straight up (90 degrees)
+ * - Left edge hit: Ball bounces up-left (up to 150 degrees)
+ * - Right edge hit: Ball bounces up-right (down to 30 degrees)
+ * 
+ * This gives the player control over the ball direction, which is a key
+ * gameplay mechanic in Breakout.
+ * 
+ * @param incomingVelocity The ball's velocity before hitting the paddle
+ * @param hitPositionRatio Where on paddle ball hit: -1.0 (left edge) to +1.0 (right edge)
+ * @return New velocity vector after reflection
+ */
 Vector2D PhysicsEngine::calculatePaddleReflection(const Vector2D& incomingVelocity, double hitPositionRatio) const {
+    // theta0 = 90 degrees (straight up) is the baseline exit angle
     const double theta0 = M_PI / 2.0;
+    // k = 60 degrees is the maximum deviation from vertical
     const double k = M_PI / 3.0;
 
     // Negative hitPositionRatio (left side) should yield exit angles > 90° (leftward).

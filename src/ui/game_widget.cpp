@@ -1,10 +1,22 @@
-#include "game_widget.h"
+/**
+ * @file game_widget.cpp
+ * @brief Main game rendering and input handling widget for the Breakout game.
+ * 
+ * This file implements the GameWidget class which is responsible for:
+ * - Rendering all game elements (paddle, ball, bricks, powerups, HUD)
+ * - Handling keyboard input for paddle movement and ball launch
+ * - Managing game state transitions (playing, paused, game over, victory)
+ * - Playing sound effects and background music
+ * - Coordinating with the game engine for physics updates
+ * 
+ * The widget uses Qt's painting system (QPainter) for 2D graphics rendering
+ * and QTimer for the 60 FPS game loop.
+ */
 
-// Standard library includes
+#include "game_widget.h"
 #include <algorithm>
 #include <cmath>
-
-// Qt includes
+#include <QCoreApplication>
 #include <QFont>
 #include <QKeyEvent>
 #include <QPainter>
@@ -25,7 +37,24 @@ using breakout::BrickType;
 using breakout::Rect;
 
 namespace {
-// Region Layout Constants
+// ============================================================================
+// Screen Layout Constants
+// ============================================================================
+// These constants define the vertical layout of the game screen:
+// +---------------------------+
+// |         HUD (60px)        |  <- Score, lives, level display
+// +---------------------------+
+// |      Padding (10px)       |
+// +---------------------------+
+// |    Powerup Region (70px)  |  <- Active powerup banners and timers
+// +---------------------------+
+// |                           |
+// |        Playfield          |  <- Where the game action happens
+// |                           |
+// +---------------------------+
+// |    Bottom Margin (40px)   |
+// +---------------------------+
+
 constexpr int kHudHeight = 60;                   // HUD top bar height
 constexpr int kHudPaddingBottom = 10;           // Spacing below HUD
 constexpr int kPowerupRegionHeight = 70;        // Combined banner + timer region
@@ -35,12 +64,34 @@ constexpr int kTimerHeight = 30;                // Timer text area (bottom of re
 // Total offset from top where playfield starts
 constexpr int kPlayfieldTopOffset = kHudHeight + kHudPaddingBottom + kPowerupRegionHeight;
 constexpr int kPlayfieldMarginBottom = 40;      // Bottom margin for playfield
-constexpr double kMaxDelta = 0.05;              // Max delta time for frame stability
+constexpr double kMaxDelta = 0.05;              // Max delta time per frame (caps at 20 FPS minimum)
 
-// Helper function to convert custom Rect to Qt rect
+/**
+ * @brief Convert our custom Rect struct to Qt's QRectF.
+ * 
+ * This utility function bridges our game engine's coordinate system
+ * (which uses Rect) with Qt's painting system (which uses QRectF).
+ * 
+ * @param r The source rectangle in game coordinates
+ * @return QRectF equivalent rectangle for Qt painting
+ */
 QRectF toQRectF(const Rect& r) {
     return QRectF(r.x, r.y, r.width, r.height);
 }
+
+/**
+ * @brief Scale and reposition a saved endgame snapshot to fit the current widget viewport.
+ * 
+ * When loading a saved game state, the original playfield dimensions may differ
+ * from the current window size. This function scales all game entities
+ * (ball, paddle, bricks, powerups) proportionally while centering them
+ * in the available playfield area below the HUD.
+ * 
+ * @param state The original snapshot with saved positions and sizes
+ * @param widgetWidth Current widget width in pixels
+ * @param widgetHeight Current widget height in pixels
+ * @return Transformed snapshot with scaled coordinates
+ */
 // Reposition and optionally scale a saved endgame snapshot to fit the current widget
 // viewport while keeping it below the HUD and centered horizontally.
 breakout::EndgameSnapshot scaleSnapshotToViewport(const breakout::EndgameSnapshot& state,
@@ -117,9 +168,18 @@ GameWidget::GameWidget(QWidget* parent) : QWidget(parent) {
     powerupSound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/powerup.wav")));
     powerupSound_.setVolume(0.6f);
     victorySound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/victory.wav")));
-    victorySound_.setVolume(0.5f);
+    victorySound_.setVolume(0.3f);
     lifeLostSound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/life_lost.wav")));
     lifeLostSound_.setVolume(0.7f);
+    
+    // Initialize background music
+    bgmPlayer_ = new QMediaPlayer(this);
+    bgmAudioOutput_ = new QAudioOutput(this);
+    bgmPlayer_->setAudioOutput(bgmAudioOutput_);
+    QString bgmPath = QCoreApplication::applicationDirPath() + QStringLiteral("/sounds/bgm.wav");
+    bgmPlayer_->setSource(QUrl::fromLocalFile(bgmPath));
+    bgmAudioOutput_->setVolume(0.1f);  // 10% volume
+    bgmPlayer_->setLoops(QMediaPlayer::Infinite);  // Loop forever
 
     // Create and style pause button (clean blue style)
     pauseButton_ = new QPushButton(tr("PAUSE"), this);
@@ -150,11 +210,13 @@ GameWidget::GameWidget(QWidget* parent) : QWidget(parent) {
         if (state_ == PlayState::Active || state_ == PlayState::PreLaunch) {
             state_ = PlayState::Paused;
             paused_ = true;
+            bgmPlayer_->pause();  // Pause BGM
         } else if (state_ == PlayState::Paused) {
             // Resume to pre-launch if ball attached, otherwise active play
             state_ = engine_.isBallAttached() ? PlayState::PreLaunch : PlayState::Active;
             paused_ = false;
             frameTimer_.restart();
+            bgmPlayer_->play();  // Resume BGM
         }
         updateButtonsForState();
         update();
@@ -322,6 +384,7 @@ void GameWidget::startGame() {
     updateTimer_.start();
     frameTimer_.restart();
     updateButtonsForState();
+    bgmPlayer_->play();  // Start background music
     update();
 }
 
@@ -359,6 +422,8 @@ void GameWidget::restartGame() {
     updateTimer_.start();
     frameTimer_.restart();
     updateButtonsForState();
+    bgmPlayer_->setPosition(0);  // Restart from beginning
+    bgmPlayer_->play();
     update();
 }
 
@@ -366,6 +431,7 @@ void GameWidget::stopGame() {
     updateTimer_.stop();
     state_ = PlayState::GameOver;
     powerBannerVisible_ = false;
+    bgmPlayer_->pause();  // Pause BGM on game over
     updateButtonsForState();
     update();
 }
@@ -481,6 +547,7 @@ void GameWidget::tick() {
         lifeLossFlash_ = false;
         state_ = PlayState::GameOver;
         activeOverlay_ = OverlayType::GameOver;
+        bgmPlayer_->pause();  // Pause BGM on game over
         gameOverSound_.play();
         emit gameOver();
     }
@@ -588,9 +655,11 @@ void GameWidget::keyPressEvent(QKeyEvent* event) {
         if (state_ == PlayState::Paused) {
             state_ = engine_.isBallAttached() ? PlayState::PreLaunch : PlayState::Active;
             paused_ = false;
+            bgmPlayer_->play();  // Resume BGM
         } else if (state_ == PlayState::Active || state_ == PlayState::PreLaunch) {
             state_ = PlayState::Paused;
             paused_ = true;
+            bgmPlayer_->pause();  // Pause BGM
         }
         updateButtonsForState();
         break;
@@ -1278,6 +1347,7 @@ void GameWidget::enterLevelCompleteState() {
         finalLevel_ = true;
         state_ = PlayState::Victory;
         activeOverlay_ = OverlayType::Victory;
+        bgmPlayer_->pause();  // Pause BGM on victory
         victorySound_.play();
         updateButtonsForState();
         return;
@@ -1287,6 +1357,7 @@ void GameWidget::enterLevelCompleteState() {
     if (finalLevel_) {
         state_ = PlayState::Victory;
         activeOverlay_ = OverlayType::Victory;
+        bgmPlayer_->pause();  // Pause BGM on victory
         victorySound_.play();
     } else {
         state_ = PlayState::LevelComplete;

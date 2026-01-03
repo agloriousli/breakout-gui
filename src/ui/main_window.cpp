@@ -1,5 +1,7 @@
 #include "main_window.h"
 
+#include <limits>
+
 #include <QFont>
 #include <QDialog>
 #include <QDialogButtonBox>
@@ -26,6 +28,7 @@
 #include "../data/config_manager.h"
 #include "../data/endgame_manager.h"
 
+using namespace std;
 class MenuWidget : public QWidget {
     Q_OBJECT
 public:
@@ -142,7 +145,7 @@ protected:
         g.setColorAt(1.0, QColor(6, 40, 60));
         p.fillRect(rect(), g);
 
-        QRadialGradient vignette(width() * 0.5, height() * 0.5, std::max(width(), height()) * 0.6);
+        QRadialGradient vignette(width() * 0.5, height() * 0.5, max(width(), height()) * 0.6);
         vignette.setColorAt(0.0, QColor(0, 0, 0, 0));
         vignette.setColorAt(1.0, QColor(0, 0, 0, 140));
         p.fillRect(rect(), vignette);
@@ -379,7 +382,7 @@ void MainWindow::openConfigDialog() {
         if (!ok || cfg.name.isEmpty()) return;
         cfg.ballSpeed = QInputDialog::getInt(&dlg, tr("Ball speed"), tr("1-10"), cfg.ballSpeed, 1, 10, 1, &ok);
         if (!ok) return;
-        cfg.randomSeed = QInputDialog::getInt(&dlg, tr("Random seed"), tr("-1 for time-based"), cfg.randomSeed, -1, std::numeric_limits<int>::max(), 1, &ok);
+        cfg.randomSeed = QInputDialog::getInt(&dlg, tr("Random seed"), tr("-1 for time-based"), cfg.randomSeed, -1, numeric_limits<int>::max(), 1, &ok);
         if (!ok) return;
         cfg.startingLevel = QInputDialog::getInt(&dlg, tr("Starting level"), tr(">=1"), cfg.startingLevel, 1, 999, 1, &ok);
         if (!ok) return;
@@ -408,7 +411,7 @@ void MainWindow::openConfigDialog() {
         bool ok = false;
         cfg.ballSpeed = QInputDialog::getInt(&dlg, tr("Ball speed"), tr("1-10"), cfg.ballSpeed, 1, 10, 1, &ok);
         if (!ok) return;
-        cfg.randomSeed = QInputDialog::getInt(&dlg, tr("Random seed"), tr("-1 for time-based"), cfg.randomSeed, -1, std::numeric_limits<int>::max(), 1, &ok);
+        cfg.randomSeed = QInputDialog::getInt(&dlg, tr("Random seed"), tr("-1 for time-based"), cfg.randomSeed, -1, numeric_limits<int>::max(), 1, &ok);
         if (!ok) return;
         cfg.startingLevel = QInputDialog::getInt(&dlg, tr("Starting level"), tr(">=1"), cfg.startingLevel, 1, 999, 1, &ok);
         if (!ok) return;
@@ -759,7 +762,7 @@ void MainWindow::editConfig() {
 
     cfg.ballSpeed = QInputDialog::getInt(this, tr("Ball speed"), tr("1-10"), cfg.ballSpeed, 1, 10, 1, &ok);
     if (!ok) return;
-    cfg.randomSeed = QInputDialog::getInt(this, tr("Random seed"), tr("-1 for time-based"), cfg.randomSeed, -1, std::numeric_limits<int>::max(), 1, &ok);
+    cfg.randomSeed = QInputDialog::getInt(this, tr("Random seed"), tr("-1 for time-based"), cfg.randomSeed, -1, numeric_limits<int>::max(), 1, &ok);
     if (!ok) return;
     cfg.startingLevel = QInputDialog::getInt(this, tr("Starting level"), tr(">=1"), cfg.startingLevel, 1, 999, 1, &ok);
     if (!ok) return;

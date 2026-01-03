@@ -1,3 +1,25 @@
+/**
+ * @file endgame_manager.cpp
+ * @brief Save/load functionality for game snapshots (endgames).
+ * 
+ * This file implements the EndgameManager class which provides:
+ * - Saving game state snapshots to .end files
+ * - Loading saved games from disk
+ * - Validation of endgame data
+ * - Listing available saved games
+ * 
+ * File Format (.end):
+ * The endgame file uses a simple text format with sections:
+ * - [header]: name, config, level, score, lives, bounds
+ * - [ball]: position, velocity, radius
+ * - [paddle]: position, dimensions
+ * - [bricks]: count followed by brick data lines
+ * - [powerups]: count followed by powerup data lines (optional)
+ * 
+ * This format is human-readable and easy to debug while still being
+ * compact enough for practical use.
+ */
+
 #include "endgame_manager.h"
 
 #include <QDir>
@@ -11,8 +33,12 @@
 using namespace std;
 
 namespace breakout {
+
+// Anonymous namespace for file-local helper functions
 namespace {
+// Convert boolean to string representation for file storage
 QString boolToString(bool v) { return v ? QStringLiteral("1") : QStringLiteral("0"); }
+// Parse string representation back to boolean
 bool stringToBool(const QString& s) { return s.trimmed() == QStringLiteral("1"); }
 
 QString brickTypeToString(BrickType t) {
@@ -154,9 +180,9 @@ bool EndgameManager::loadEndgame(const QString& baseName, EndgameSnapshot& outSt
 
     QStringList lsl = readLineTokens(3, &err);
     if (!err.isEmpty()) { if (error) *error = err; return false; }
-    int level = std::max(1, lsl[0].toInt());
-    int score = std::max(0, lsl[1].toInt());
-    int lives = std::max(1, lsl[2].toInt());
+    int level = max(1, lsl[0].toInt());
+    int score = max(0, lsl[1].toInt());
+    int lives = max(1, lsl[2].toInt());
 
     QStringList cfgLine = readLineTokens(3, &err);
     if (!err.isEmpty()) { if (error) *error = err; return false; }
@@ -191,8 +217,8 @@ bool EndgameManager::loadEndgame(const QString& baseName, EndgameSnapshot& outSt
     QStringList countLine = readLineTokens(1, &err);
     if (!err.isEmpty()) { if (error) *error = err; return false; }
     int brickCount = countLine[0].toInt();
-    std::vector<BrickState> bricks;
-    bricks.reserve(std::max(0, brickCount));
+    vector<BrickState> bricks;
+    bricks.reserve(max(0, brickCount));
     for (int i = 0; i < brickCount; ++i) {
         // Support legacy saves with 6 tokens (without destroyed flag). If the 7th token is absent, default to not destroyed.
         QStringList parts = readLineTokens(6, &err);

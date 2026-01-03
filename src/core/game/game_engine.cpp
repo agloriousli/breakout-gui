@@ -1,3 +1,19 @@
+/**
+ * @file game_engine.cpp
+ * @brief Core game engine implementing Breakout game logic.
+ * 
+ * This file contains the GameEngine class which manages:
+ * - Game state (score, lives, current level, game over/victory conditions)
+ * - Entity management (ball, paddle, bricks, powerups)
+ * - Physics updates via PhysicsEngine delegation
+ * - Level progression and difficulty scaling
+ * - Powerup effects (paddle expansion, speed boost, point multiplier, etc.)
+ * - Save/load functionality via EndgameSnapshot
+ * 
+ * The engine follows a Model-View separation pattern where GameEngine handles
+ * all game logic while GameWidget handles rendering and input.
+ */
+
 #include "game_engine.h"
 
 #include <algorithm>
@@ -10,10 +26,19 @@ namespace breakout {
 
 namespace {
 // ============================================================================
-// Helper Functions
+// Factory Functions
 // ============================================================================
 
-// Create a brick from saved state
+/**
+ * @brief Create a brick object from saved state data.
+ * 
+ * This factory function reconstructs a brick of the appropriate type
+ * (Normal, Durable, or Indestructible) from serialized state data.
+ * Used when loading saved games or endgame snapshots.
+ * 
+ * @param state Saved brick state containing type, position, and hit count
+ * @return Unique pointer to reconstructed brick, or nullptr if type unknown
+ */
 unique_ptr<Brick> createBrickFromState(const BrickState& state) {
     unique_ptr<Brick> brick;
     switch (state.type) {
@@ -35,19 +60,22 @@ unique_ptr<Brick> createBrickFromState(const BrickState& state) {
 }
 
 // ============================================================================
-// Game Constants
+// Game Balance Constants
 // ============================================================================
-constexpr double kPowerupSpawnChance = 0.5;      // 100% chance to spawn powerup
-constexpr double kPowerupFallSpeed = 120.0;      // Pixels per second
-constexpr double kExpandWidthBonus = 70.0;       // Extra paddle width (pixels)
-constexpr double kExpandDuration = 12.0;         // Expand effect duration (seconds)
-constexpr double kSpeedBoostDuration = 10.0;     // Speed boost duration (seconds)
-constexpr double kSpeedBoostMultiplier = 1.5;    // Speed boost multiplier
-constexpr double kPointMultiplierDuration = 15.0; // Point multiplier duration (seconds)
-constexpr double kMaxPaddleWidth = 320.0;        // Maximum paddle width (pixels) - allows expansion
-constexpr double kBrickPoints = 100.0;           // Points per normal brick
-constexpr int kMaxLives = 5;                     // Maximum lives
-constexpr int kMaxPointMultiplier = 10;          // Maximum point multiplier
+// These constants control game difficulty and powerup behavior.
+// Adjusting these values will change how the game feels to play.
+
+constexpr double kPowerupSpawnChance = 0.5;      // 50% chance to spawn powerup when brick destroyed
+constexpr double kPowerupFallSpeed = 120.0;      // How fast powerups fall (pixels per second)
+constexpr double kExpandWidthBonus = 70.0;       // Extra paddle width when expanded (pixels)
+constexpr double kExpandDuration = 12.0;         // How long paddle expansion lasts (seconds)
+constexpr double kSpeedBoostDuration = 10.0;     // How long speed boost lasts (seconds)
+constexpr double kSpeedBoostMultiplier = 1.5;    // Ball speed multiplier during speed boost
+constexpr double kPointMultiplierDuration = 15.0; // How long point multiplier lasts (seconds)
+constexpr double kMaxPaddleWidth = 320.0;        // Maximum paddle width (prevents overlap issues)
+constexpr double kBrickPoints = 100.0;           // Base points awarded per brick destroyed
+constexpr int kMaxLives = 5;                     // Maximum lives player can have
+constexpr int kMaxPointMultiplier = 10;          // Maximum score multiplier achievable
 
 // Clamp value between min and max
 double clamp(double v, double minVal, double maxVal) {
@@ -97,6 +125,21 @@ void GameEngine::newGame() {
     attachBallToPaddle();
 }
 
+/**
+ * @brief Reset the game to a specific level.
+ * 
+ * This function:
+ * 1. Clears all active powerups and effects
+ * 2. Calculates brick dimensions based on playfield size
+ * 3. Adjusts paddle width based on level difficulty
+ * 4. Builds the brick layout for the specified level
+ * 5. Positions paddle and ball at starting positions
+ * 
+ * Difficulty scaling: The paddle shrinks by 20 pixels per level,
+ * making higher levels more challenging.
+ * 
+ * @param levelIndex The level number to load (1-indexed)
+ */
 void GameEngine::resetLevel(int levelIndex) {
     // Reset level-specific state
     currentLevel_ = levelIndex;
