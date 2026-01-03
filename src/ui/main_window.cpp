@@ -178,6 +178,11 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent) {
     setMinimumSize(700, 600);
     resize(800, 700);
 
+    // Ensure default config exists and load it at startup
+    configManager_->ensureDefaultConfigExists();
+    currentConfig_ = breakout::ConfigManager::defaultConfig();
+    applyConfig(currentConfig_);
+
     setupConnections();
     setupMenu();
 }
@@ -330,6 +335,13 @@ void MainWindow::openConfigDialog() {
     QDialog dlg(this);
     dlg.setWindowTitle(tr("Configs"));
     auto* layout = new QVBoxLayout(&dlg);
+    
+    // Display currently loaded config
+    auto* currentLabel = new QLabel(tr("Current config: <b>%1</b>").arg(
+        currentConfig_.name.isEmpty() ? tr("default") : currentConfig_.name), &dlg);
+    currentLabel->setStyleSheet("padding: 8px; background: rgba(30,150,200,40); border-radius: 4px;");
+    layout->addWidget(currentLabel);
+    
     auto* list = new QListWidget(&dlg);
     list->setSelectionMode(QAbstractItemView::SingleSelection);
     auto* btnRow = new QHBoxLayout();
@@ -348,22 +360,31 @@ void MainWindow::openConfigDialog() {
     layout->addWidget(list);
     layout->addLayout(btnRow);
 
-    auto refresh = [list]() {
+    auto refresh = [list, currentLabel, this]() {
         list->clear();
         QDir dir("config");
         QStringList files = dir.entryList(QStringList() << "*.config", QDir::Files, QDir::Name);
         for (const auto& f : files) {
-            list->addItem(QFileInfo(f).completeBaseName());
+            QString name = QFileInfo(f).completeBaseName();
+            auto* item = new QListWidgetItem(name, list);
+            // Highlight the currently loaded config
+            if (name == currentConfig_.name) {
+                item->setBackground(QColor(30, 150, 200, 60));
+                item->setText(name + tr(" (loaded)"));
+            }
         }
+        currentLabel->setText(tr("Current config: <b>%1</b>").arg(
+            currentConfig_.name.isEmpty() ? tr("default") : currentConfig_.name));
     };
     refresh();
 
     connect(closeBtn, &QPushButton::clicked, &dlg, &QDialog::reject);
 
-    connect(loadBtn, &QPushButton::clicked, this, [this, list, &dlg]() {
+    connect(loadBtn, &QPushButton::clicked, this, [this, list, &dlg, refresh]() {
         auto* item = list->currentItem();
         if (!item) return;
-        QString name = item->text();
+        // Extract name without " (loaded)" suffix
+        QString name = item->text().replace(tr(" (loaded)"), "");
         breakout::GameConfig cfg;
         QString err;
         if (!configManager_->loadConfig(name, cfg, &err)) {
@@ -372,14 +393,23 @@ void MainWindow::openConfigDialog() {
         }
         currentConfig_ = cfg;
         applyConfig(cfg);
+        refresh();  // Update display to show newly loaded config
         QMessageBox::information(&dlg, tr("Loaded"), tr("Config %1 loaded").arg(name));
     });
 
     connect(newBtn, &QPushButton::clicked, this, [this, list, &dlg, refresh]() {
         bool ok = false;
         breakout::GameConfig cfg = currentConfig_;
-        cfg.name = QInputDialog::getText(&dlg, tr("Config name"), tr("Name:"), QLineEdit::Normal, cfg.name, &ok);
+        cfg.name = QInputDialog::getText(&dlg, tr("Config name"), tr("Name:"), QLineEdit::Normal, QString(), &ok);
         if (!ok || cfg.name.isEmpty()) return;
+        
+        // Prevent overwriting the default config
+        if (breakout::ConfigManager::isDefaultConfig(cfg.name)) {
+            QMessageBox::warning(&dlg, tr("Reserved Name"), 
+                tr("'default' is a reserved config name. Please choose another name."));
+            return;
+        }
+        
         cfg.ballSpeed = QInputDialog::getInt(&dlg, tr("Ball speed"), tr("1-10"), cfg.ballSpeed, 1, 10, 1, &ok);
         if (!ok) return;
         cfg.randomSeed = QInputDialog::getInt(&dlg, tr("Random seed"), tr("-1 for time-based"), cfg.randomSeed, -1, numeric_limits<int>::max(), 1, &ok);
@@ -401,7 +431,16 @@ void MainWindow::openConfigDialog() {
     connect(editBtn, &QPushButton::clicked, this, [this, list, &dlg, refresh]() {
         auto* item = list->currentItem();
         if (!item) return;
-        QString name = item->text();
+        // Extract name without " (loaded)" suffix
+        QString name = item->text().replace(tr(" (loaded)"), "");
+        
+        // Protect default config from editing
+        if (breakout::ConfigManager::isDefaultConfig(name)) {
+            QMessageBox::information(&dlg, tr("Protected"), 
+                tr("The default config cannot be edited. Create a new config instead."));
+            return;
+        }
+        
         breakout::GameConfig cfg;
         QString err;
         if (!configManager_->loadConfig(name, cfg, &err)) {
@@ -425,10 +464,19 @@ void MainWindow::openConfigDialog() {
         QMessageBox::information(&dlg, tr("Saved"), tr("Config %1 updated").arg(name));
     });
 
-    connect(delBtn, &QPushButton::clicked, this, [list, &dlg, refresh]() {
+    connect(delBtn, &QPushButton::clicked, this, [this, list, &dlg, refresh]() {
         auto* item = list->currentItem();
         if (!item) return;
-        QString name = item->text();
+        // Extract name without " (loaded)" suffix
+        QString name = item->text().replace(tr(" (loaded)"), "");
+        
+        // Protect default config from deletion
+        if (breakout::ConfigManager::isDefaultConfig(name)) {
+            QMessageBox::information(&dlg, tr("Protected"), 
+                tr("The default config cannot be deleted."));
+            return;
+        }
+        
         QString path = QStringLiteral("config/%1.config").arg(name);
         if (!QFile::exists(path)) {
             QMessageBox::information(&dlg, tr("Not found"), tr("Config %1 does not exist.").arg(name));
@@ -440,6 +488,11 @@ void MainWindow::openConfigDialog() {
         if (!QFile::remove(path)) {
             QMessageBox::warning(&dlg, tr("Delete failed"), tr("Could not delete %1").arg(path));
             return;
+        }
+        // If deleted config was loaded, revert to default
+        if (currentConfig_.name == name) {
+            currentConfig_ = breakout::ConfigManager::defaultConfig();
+            applyConfig(currentConfig_);
         }
         refresh();
     });

@@ -11,6 +11,36 @@ constexpr int kMinSpeed = 1;
 constexpr int kMaxSpeed = 10;
 }
 
+// ============================================================================
+// Default Config Handling
+// ============================================================================
+
+GameConfig ConfigManager::defaultConfig() {
+    GameConfig cfg;
+    cfg.name = QString::fromLatin1(kDefaultConfigName);
+    cfg.ballSpeed = 5;
+    cfg.randomSeed = -1;
+    cfg.startingLevel = 1;
+    return cfg;
+}
+
+bool ConfigManager::isDefaultConfig(const QString& name) {
+    return name.compare(QString::fromLatin1(kDefaultConfigName), Qt::CaseInsensitive) == 0;
+}
+
+void ConfigManager::ensureDefaultConfigExists() const {
+    QString filePath = QStringLiteral("config/%1.config").arg(QString::fromLatin1(kDefaultConfigName));
+    if (!QFile::exists(filePath)) {
+        // Create the default config file with standard settings
+        GameConfig def = defaultConfig();
+        saveConfig(def.name, def, nullptr);
+    }
+}
+
+// ============================================================================
+// Validation
+// ============================================================================
+
 QStringList ConfigManager::validate(const GameConfig& config) const {
     QStringList errors;
     if (config.ballSpeed < kMinSpeed || config.ballSpeed > kMaxSpeed) {

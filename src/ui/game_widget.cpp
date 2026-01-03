@@ -38,9 +38,9 @@ using breakout::Rect;
 
 namespace {
 // ============================================================================
-// Screen Layout Constants
+// Screen Layout 
 // ============================================================================
-// These constants define the vertical layout of the game screen:
+// 
 // +---------------------------+
 // |         HUD (60px)        |  <- Score, lives, level display
 // +---------------------------+
@@ -168,7 +168,7 @@ GameWidget::GameWidget(QWidget* parent) : QWidget(parent) {
     powerupSound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/powerup.wav")));
     powerupSound_.setVolume(0.6f);
     victorySound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/victory.wav")));
-    victorySound_.setVolume(0.3f);
+    victorySound_.setVolume(0.1f);
     lifeLostSound_.setSource(QUrl::fromLocalFile(QStringLiteral("sounds/life_lost.wav")));
     lifeLostSound_.setVolume(0.7f);
     
@@ -178,7 +178,7 @@ GameWidget::GameWidget(QWidget* parent) : QWidget(parent) {
     bgmPlayer_->setAudioOutput(bgmAudioOutput_);
     QString bgmPath = QCoreApplication::applicationDirPath() + QStringLiteral("/sounds/bgm.wav");
     bgmPlayer_->setSource(QUrl::fromLocalFile(bgmPath));
-    bgmAudioOutput_->setVolume(0.1f);  // 10% volume
+    bgmAudioOutput_->setVolume(0.05f);  // 10% volume
     bgmPlayer_->setLoops(QMediaPlayer::Infinite);  // Loop forever
 
     // Create and style pause button (clean blue style)
@@ -348,6 +348,8 @@ void GameWidget::loadEndgame(const QString& filename, const breakout::EndgameSna
     updateTimer_.start();
     frameTimer_.restart();
     updateButtonsForState();
+    bgmPlayer_->setPosition(0);  // Start from beginning
+    bgmPlayer_->play();          // Start background music for endgame
     update();
 }
 
@@ -427,6 +429,12 @@ void GameWidget::restartGame() {
     update();
 }
 
+/**
+ * @brief Stop the game and enter game over state.
+ * 
+ * Called when the game ends (all lives lost). Stops the game loop timer,
+ * pauses background music, and updates the UI to show game over state.
+ */
 void GameWidget::stopGame() {
     updateTimer_.stop();
     state_ = PlayState::GameOver;
@@ -436,8 +444,26 @@ void GameWidget::stopGame() {
     update();
 }
 
+// ============================================================================
+// Main Game Loop (called 60 times per second by updateTimer_)
+// ============================================================================
+/**
+ * @brief Main game loop tick - called every 16ms (~60 FPS).
+ * 
+ * This is the heart of the game. Each tick:
+ * 1. Calculates delta time since last frame
+ * 2. Handles overlay states (blocks gameplay until dismissed)
+ * 3. Updates paddle position based on input
+ * 4. Updates ball position and physics
+ * 5. Detects collisions and spawns visual effects
+ * 6. Checks for powerup activations and life changes
+ * 7. Handles level completion and game over
+ * 8. Triggers repaint of the widget
+ */
 void GameWidget::tick() {
+    // Calculate time elapsed since last frame (in seconds)
     double deltaSeconds = frameTimer_.restart() / 1000.0;
+    // Cap delta time to prevent physics issues if game lags
     if (deltaSeconds > kMaxDelta) deltaSeconds = kMaxDelta;
 
     // Block all game logic when overlay is active (user must dismiss first)
@@ -556,7 +582,17 @@ void GameWidget::tick() {
     update();
 }
 
+/**
+ * @brief Update paddle position based on keyboard input.
+ * 
+ * Moves the paddle left or right based on which arrow/WASD keys are pressed.
+ * The paddle movement speed is controlled by the engine based on current
+ * powerup state (speed boost makes paddle move faster).
+ * 
+ * @param deltaSeconds Time elapsed since last frame for smooth movement
+ */
 void GameWidget::updatePaddle(double deltaSeconds) {
+    // Only move if one direction key is pressed (not both)
     if (leftPressed_ && !rightPressed_) {
         engine_.movePaddleLeft(deltaSeconds);
     } else if (rightPressed_ && !leftPressed_) {
@@ -564,21 +600,44 @@ void GameWidget::updatePaddle(double deltaSeconds) {
     }
 }
 
+// ============================================================================
+// Qt Event Handlers
+// ============================================================================
+
+/**
+ * @brief Handle paint event - renders the entire game scene.
+ * 
+ * Uses double buffering to prevent flickering:
+ * 1. Draw everything to an off-screen buffer (QPixmap)
+ * 2. Copy the buffer to the screen in one operation
+ * 
+ * This ensures smooth rendering even during fast updates.
+ */
 void GameWidget::paintEvent(QPaintEvent* event) {
+    // Create buffer if size changed
     if (buffer_.size() != size()) {
         buffer_ = QPixmap(size());
     }
     buffer_.fill(Qt::black);
 
+    // Draw entire scene to buffer
     QPainter bufferPainter(&buffer_);
     bufferPainter.setRenderHint(QPainter::Antialiasing, true);
     drawScene(bufferPainter);
 
+    // Copy buffer to screen
     QPainter painter(this);
     painter.drawPixmap(0, 0, buffer_);
     QWidget::paintEvent(event);
 }
 
+/**
+ * @brief Handle window resize - recalculate layout dimensions.
+ * 
+ * When the window is resized, we need to update:
+ * - Playfield boundaries (where the ball can move)
+ * - Button positions (pause button, menu buttons)
+ */
 void GameWidget::resizeEvent(QResizeEvent* event) {
     updatePlayfieldBounds();
     layoutButtons();
@@ -586,7 +645,20 @@ void GameWidget::resizeEvent(QResizeEvent* event) {
     QWidget::resizeEvent(event);
 }
 
+/**
+ * @brief Handle key press events for game controls.
+ * 
+ * Key mappings:
+ * - A/Left Arrow: Move paddle left
+ * - D/Right Arrow: Move paddle right  
+ * - Space/Enter: Launch ball or dismiss overlays
+ * - P/Escape: Pause/Resume game
+ * - M: Return to main menu
+ * - S: Save game (when paused)
+ * - R: Restart level
+ */
 void GameWidget::keyPressEvent(QKeyEvent* event) {
+    // Ignore auto-repeat events (key held down)
     if (event->isAutoRepeat()) {
         QWidget::keyPressEvent(event);
         return;
@@ -703,10 +775,32 @@ void GameWidget::keyReleaseEvent(QKeyEvent* event) {
     QWidget::keyReleaseEvent(event);
 }
 
+// ============================================================================
+// Scene Rendering - Draws all game elements
+// ============================================================================
+
+/**
+ * @brief Main scene drawing function - renders all game elements.
+ * 
+ * Drawing order (back to front for proper layering):
+ * 1. Background gradient and grid pattern
+ * 2. Particle effects (explosions, trails)
+ * 3. Bricks with color coding and damage states
+ * 4. Paddle with shadow and glow effects
+ * 5. Ball trail effect
+ * 6. Ball with glow halo
+ * 7. Falling powerups with icons
+ * 8. HUD bar (score, lives, level)
+ * 9. Power-up banners and timers
+ * 10. Score popups (floating point text)
+ * 11. Overlays (pause, game over, victory)
+ * 12. Decorative corner brackets
+ */
 void GameWidget::drawScene(QPainter& painter) {
     Rect bounds = engine_.playfieldBounds();
 
     // Clip all gameplay rendering to the playfield region
+    // This prevents drawing outside the game area
     painter.save();
     painter.setClipRect(playfieldRegion_);
 
@@ -717,7 +811,7 @@ void GameWidget::drawScene(QPainter& painter) {
     bg.setColorAt(1.0, QColor(10, 20, 30));      // Dark cyan bottom
     painter.fillRect(QRectF(bounds.x, bounds.y, bounds.width, bounds.height), bg);
 
-    // Draw subtle grid background pattern
+    // Draw subtle grid background pattern for retro arcade feel
     painter.setPen(QPen(QColor(100, 150, 200, 20), 1));
     const int gridSize = 40;
     for (double x = bounds.x; x <= bounds.x + bounds.width; x += gridSize) {
@@ -1061,6 +1155,21 @@ void GameWidget::drawScene(QPainter& painter) {
     painter.drawRect(QRectF(px - 2, py - 2, pw + 4, ph + 4));
 }
 
+// ============================================================================
+// HUD (Heads-Up Display) Rendering
+// ============================================================================
+
+/**
+ * @brief Draw the HUD bar at the top of the screen.
+ * 
+ * The HUD displays:
+ * - SCORE: Current player score (left side)
+ * - LIVES: Heart icons showing remaining lives (center-left)
+ * - LEVEL: Current level number (center)
+ * 
+ * Uses a gradient background with decorative corner brackets for
+ * a polished arcade aesthetic.
+ */
 void GameWidget::drawHUDBar(QPainter& painter) {
     painter.save();
     
@@ -1301,12 +1410,24 @@ void GameWidget::drawVictoryOverlay(QPainter& painter) {
     painter.restore();
 }
 
+// ============================================================================
+// Power-up Banner System
+// ============================================================================
+
+/**
+ * @brief Draw the animated power-up collection banner.
+ * 
+ * When a powerup is collected, a colored banner sweeps across the screen
+ * from left to right, showing the powerup name and duration. The banner
+ * uses the powerup's signature color for easy recognition.
+ */
 void GameWidget::drawPowerBanner(QPainter& painter) {
     if (!powerBannerVisible_) return;
     if (!powerBannerTimer_.isValid()) {
         powerBannerVisible_ = false;
         return;
     }
+    // Calculate animation progress (0.0 to 1.0)
     int elapsed = powerBannerTimer_.elapsed();
     if (elapsed >= powerBannerDurationMs_) {
         powerBannerVisible_ = false;
@@ -1334,6 +1455,15 @@ void GameWidget::drawPowerBanner(QPainter& painter) {
     painter.restore();
 }
 
+/**
+ * @brief Trigger power-up collection banner animation.
+ * 
+ * Starts the sweeping banner animation with the specified text and color.
+ * Also plays the powerup sound effect.
+ * 
+ * @param text The text to display (e.g., "Power-up: Expand Paddle (10s)")
+ * @param color The banner color matching the powerup type
+ */
 void GameWidget::showPowerBanner(const QString& text, const QColor& color) {
     powerBannerText_ = text;
     powerBannerColor_ = color;
@@ -1342,7 +1472,19 @@ void GameWidget::showPowerBanner(const QString& text, const QColor& color) {
     powerupSound_.play();
 }
 
+// ============================================================================
+// Level Progression
+// ============================================================================
+
+/**
+ * @brief Enter level complete state after clearing all breakable bricks.
+ * 
+ * Checks if there are more levels to play:
+ * - If more levels exist: Show "Level Complete" overlay
+ * - If final level or endgame mode: Show "Victory" overlay
+ */
 void GameWidget::enterLevelCompleteState() {
+    // In endgame mode, completing the level means victory
     if (endgameMode_) {
         finalLevel_ = true;
         state_ = PlayState::Victory;
@@ -1393,8 +1535,25 @@ void GameWidget::proceedFromLevelComplete() {
     update();
 }
 
+// ============================================================================
+// Layout and Bounds Calculations
+// ============================================================================
+
+/**
+ * @brief Calculate and update playfield boundaries based on widget size.
+ * 
+ * The playfield is the area where gameplay occurs. This function:
+ * 1. Sets up the HUD region at the top
+ * 2. Sets up the powerup banner/timer region below HUD
+ * 3. Calculates available space for the playfield
+ * 4. Centers the playfield horizontally with margins
+ * 5. Updates the game engine with new boundaries
+ * 
+ * When loading a saved game (useSnapshotBounds_ = true), uses the
+ * saved boundaries to maintain consistent gameplay.
+ */
 void GameWidget::updatePlayfieldBounds() {
-    // Calculate region boundaries
+    // HUD bar at the very top
     hudRegion_ = QRect(0, 0, width(), kHudHeight);
     
     // Combined powerup region (banner animation + timer text, no gap between them)
@@ -1468,8 +1627,21 @@ void GameWidget::layoutPauseMenuButtons() {
     menuButton_->setGeometry(centerX, startY + 2 * (btnH + spacing), btnW, btnH);
 }
 
+/**
+ * @brief Update button visibility and enabled state based on game state.
+ * 
+ * Button rules:
+ * - Pause button: Enabled during Active/PreLaunch/Paused states (no overlay)
+ * - Save button: Only visible when paused
+ * - Restart/Menu buttons: Visible during Paused/GameOver/Victory states
+ * 
+ * This ensures players only see contextually appropriate options.
+ */
 void GameWidget::updateButtonsForState() {
+    // Toggle pause button text based on current state
     pauseButton_->setText(state_ == PlayState::Paused ? tr("RESUME") : tr("PAUSE"));
+    
+    // Pause button only works during gameplay (not during overlays)
     bool allowPause = (state_ == PlayState::Active || state_ == PlayState::PreLaunch || state_ == PlayState::Paused) 
                       && activeOverlay_ == OverlayType::None;
     pauseButton_->setEnabled(allowPause);
@@ -1485,6 +1657,20 @@ void GameWidget::updateButtonsForState() {
     saveButton_->setEnabled(state_ == PlayState::Paused);
 }
 
+// ============================================================================
+// Visual Effects System
+// ============================================================================
+
+/**
+ * @brief Update all visual effects each frame.
+ * 
+ * Manages the lifecycle of visual effects:
+ * - Impact flashes: Brief white flashes at collision points (300ms lifetime)
+ * - Particles: Physics-simulated debris from destroyed bricks
+ * - Score popups: Floating text showing points earned
+ * 
+ * Effects are removed when their lifetime expires to prevent memory buildup.
+ */
 void GameWidget::updateEffects() {
     qint64 currentTime = effectsTimer_.elapsed();
     

@@ -87,6 +87,20 @@ EndgameEditorWidget::EndgameEditorWidget(QWidget* parent) : QWidget(parent) {
     table_->setEditTriggers(QAbstractItemView::NoEditTriggers);
     table_->setSelectionMode(QAbstractItemView::NoSelection);
     table_->setFocusPolicy(Qt::NoFocus);
+    
+    // Style the grid with visible white lines on dark background
+    table_->setStyleSheet(QStringLiteral(
+        "QTableWidget {"
+        "  background-color: #2a2a2a;"
+        "  gridline-color: white;"
+        "}"
+        "QTableWidget::item {"
+        "  background-color: #3a3a3a;"
+        "  color: white;"
+        "  border: 1px solid white;"
+        "}"
+    ));
+    table_->setShowGrid(true);
 
     layout->addLayout(topRow);
     layout->addWidget(table_);
@@ -229,8 +243,14 @@ breakout::EndgameSnapshot EndgameEditorWidget::buildSnapshot(const QString& name
     // Validate dimensions don't exceed reasonable limits
     validateEndgameDimensions(const_cast<int&>(cols), const_cast<int&>(rows));
 
-    snap.bounds = {kOffsetX, kOffsetY, cols * kBrickW, rows * kBrickH};
-    snap.ball.position = {snap.bounds.x + snap.bounds.width * 0.5, snap.bounds.y + snap.bounds.height - 40.0};
+    // Add substantial play area below the bricks for paddle and ball gameplay
+    // The play area should be roughly 3x the brick grid height to allow proper gameplay
+    double brickGridHeight = rows * kBrickH;
+    double playAreaHeight = std::max(200.0, brickGridHeight * 2.0);  // At least 200px or 2x brick height
+    double totalHeight = brickGridHeight + playAreaHeight;
+    
+    snap.bounds = {kOffsetX, kOffsetY, cols * kBrickW, totalHeight};
+    snap.ball.position = {snap.bounds.x + snap.bounds.width * 0.5, snap.bounds.bottom() - 50.0};
     snap.ball.velocity = {0.0, -260.0};
     snap.ball.radius = 6.0;
     snap.paddle.position = {snap.bounds.x + snap.bounds.width * 0.5 - 40.0, snap.bounds.bottom() - 12.0 - 16.0};

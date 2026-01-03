@@ -178,17 +178,19 @@ bool EndgameManager::loadEndgame(const QString& baseName, EndgameSnapshot& outSt
     QString configLine = in.readLine();
     if (configLine.isNull()) { if (error) *error = QObject::tr("Missing config name"); return false; }
 
-    QStringList lsl = readLineTokens(3, &err);
-    if (!err.isEmpty()) { if (error) *error = err; return false; }
-    int level = max(1, lsl[0].toInt());
-    int score = max(0, lsl[1].toInt());
-    int lives = max(1, lsl[2].toInt());
-
+    // Read config line FIRST (matches save order: configBallSpeed, configRandomSeed, configStartingLevel)
     QStringList cfgLine = readLineTokens(3, &err);
     if (!err.isEmpty()) { if (error) *error = err; return false; }
     int cfgSpeed = cfgLine[0].toInt();
     int cfgSeed = cfgLine[1].toInt();
     int cfgStart = cfgLine[2].toInt();
+
+    // Read level/score/lives SECOND (matches save order: level, score, lives)
+    QStringList lsl = readLineTokens(3, &err);
+    if (!err.isEmpty()) { if (error) *error = err; return false; }
+    int level = max(1, lsl[0].toInt());
+    int score = max(0, lsl[1].toInt());
+    int lives = max(1, lsl[2].toInt());
 
     QStringList bdl = readLineTokens(4, &err);
     if (!err.isEmpty()) { if (error) *error = err; return false; }
