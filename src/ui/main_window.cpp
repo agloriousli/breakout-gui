@@ -80,7 +80,7 @@ public:
 
         auto* playDefaultButton = new QPushButton(tr("Play Default"), card);
         auto* playEndgameButton = new QPushButton(tr("Play Endgame"), card);
-        auto* editConfigsButton = new QPushButton(tr("Edit Configs"), card);
+        auto* editConfigsButton = new QPushButton(tr("Configs Menu"), card);
         auto* editEndgamesButton = new QPushButton(tr("Edit Endgames"), card);
         auto* helpButton = new QPushButton(tr("How to Play"), card);
         auto* quitButton = new QPushButton(tr("Quit"), card);
@@ -97,7 +97,7 @@ public:
             btn->setCursor(Qt::PointingHandCursor);
         }
 
-        auto* footer = new QLabel(tr("Welcome to Breakout!"), card);
+        auto* footer = new QLabel(tr("Breakout Game"), card);
         QFont footFont = footer->font();
         footFont.setPointSize(10);
         footer->setFont(footFont);

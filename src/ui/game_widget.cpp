@@ -436,7 +436,7 @@ void GameWidget::tick() {
         showPowerBanner(tr("Power-up: Points x%1 (%2s)").arg(engine_.pointMultiplier()).arg(QString::number(pointMultNow, 'f', 1)), QColor(255, 150, 255));  // Magenta
     }
     if (bigBallNow > lastMultiBallSeconds_ + 0.01) {
-        showPowerBanner(tr("Power-up: Big Ball (%1s) [Crushes Multiple Blocks!]").arg(QString::number(bigBallNow, 'f', 1)), QColor(255, 180, 100));  // Orange
+        showPowerBanner(tr("Power-up: Big Ball (%1s) [Larger Attack Radius!]").arg(QString::number(bigBallNow, 'f', 1)), QColor(255, 180, 100));  // Orange
     }
     
     lastExpandSeconds_ = expandNow;

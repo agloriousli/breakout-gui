@@ -8,6 +8,8 @@
 
 #include <algorithm>
 
+using namespace std;
+
 namespace breakout {
 namespace {
 QString boolToString(bool v) { return v ? QStringLiteral("1") : QStringLiteral("0"); }
@@ -116,7 +118,8 @@ bool EndgameManager::saveEndgame(const QString& baseName,
     out << tmp.bricks.size() << "\n";
     for (const auto& b : tmp.bricks) {
         out << brickTypeToString(b.type) << " " << b.hitsRemaining << " "
-            << b.bounds.x << " " << b.bounds.y << " " << b.bounds.width << " " << b.bounds.height << "\n";
+            << b.bounds.x << " " << b.bounds.y << " " << b.bounds.width << " " << b.bounds.height << " "
+            << boolToString(b.destroyed) << "\n";
     }
     return true;
 }
@@ -191,12 +194,20 @@ bool EndgameManager::loadEndgame(const QString& baseName, EndgameSnapshot& outSt
     std::vector<BrickState> bricks;
     bricks.reserve(std::max(0, brickCount));
     for (int i = 0; i < brickCount; ++i) {
+        // Support legacy saves with 6 tokens (without destroyed flag). If the 7th token is absent, default to not destroyed.
         QStringList parts = readLineTokens(6, &err);
         if (!err.isEmpty()) { if (error) *error = err; return false; }
+        if (parts.size() < 6) {
+            if (error) *error = QObject::tr("Malformed brick line in %1").arg(filePath);
+            return false;
+        }
         BrickState bs;
         bs.type = stringToBrickType(parts[0]);
         bs.hitsRemaining = parts[1].toInt();
         bs.bounds = { parts[2].toDouble(), parts[3].toDouble(), parts[4].toDouble(), parts[5].toDouble() };
+        if (parts.size() >= 7) {
+            bs.destroyed = stringToBool(parts[6]);
+        }
         bricks.push_back(bs);
     }
 

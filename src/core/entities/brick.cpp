@@ -1,4 +1,7 @@
+
 #include "brick.h"
+
+using namespace std;
 
 namespace breakout {
 
