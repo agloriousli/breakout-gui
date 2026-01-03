@@ -1149,7 +1149,7 @@ void GameWidget::drawOverlay(QPainter& painter, const QString& title, const QStr
     // Draw title
     QFontMetrics fm = QFontMetrics(font);
     int titleWidth = fm.horizontalAdvance(title);
-    painter.drawText((width() - titleWidth) / 2, height() / 2 - 40, title);
+    painter.drawText((width() - titleWidth) / 2 + 10, height() / 2 - 40, title);
     
     // Draw body text with cyan color for contrast - tighter spacing
     painter.setPen(QColor(0, 255, 255));
@@ -1203,7 +1203,7 @@ void GameWidget::drawVictoryOverlay(QPainter& painter) {
     QFontMetrics titleFm(titleFont);
     QString title = tr("VICTORY!");
     int titleWidth = titleFm.horizontalAdvance(title);
-    painter.drawText((width() - titleWidth) / 2, height() / 2 - 80, title);
+    painter.drawText((width() - titleWidth) / 2 + 10, height() / 2 - 80, title);
     
     // Score display - cyan
     painter.setPen(QColor(0, 255, 255));

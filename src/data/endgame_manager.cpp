@@ -119,7 +119,7 @@ bool EndgameManager::saveEndgame(const QString& baseName,
     for (const auto& b : tmp.bricks) {
         out << brickTypeToString(b.type) << " " << b.hitsRemaining << " "
             << b.bounds.x << " " << b.bounds.y << " " << b.bounds.width << " " << b.bounds.height << " "
-            << boolToString(b.destroyed) << "\n";
+            << boolToString(b.destroyed) << " " << b.assignedPowerup << "\n";
     }
     return true;
 }
@@ -207,6 +207,9 @@ bool EndgameManager::loadEndgame(const QString& baseName, EndgameSnapshot& outSt
         bs.bounds = { parts[2].toDouble(), parts[3].toDouble(), parts[4].toDouble(), parts[5].toDouble() };
         if (parts.size() >= 7) {
             bs.destroyed = stringToBool(parts[6]);
+        }
+        if (parts.size() >= 8) {
+            bs.assignedPowerup = parts[7].toInt();
         }
         bricks.push_back(bs);
     }

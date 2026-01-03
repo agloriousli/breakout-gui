@@ -15,11 +15,14 @@ enum class BrickType {
     Indestructible
 };
 
+// Powerup type for bricks: -1 = none, 0-4 map to PowerupType enum
+// 0=ExpandPaddle, 1=ExtraLife, 2=SpeedBoost, 3=PointMultiplier, 4=MultiBall
 struct BrickState {
     BrickType type { BrickType::Normal };
     Rect bounds;
     int hitsRemaining {1};
     bool destroyed {false};
+    int assignedPowerup {-1};  // -1 = random/none, 0-4 = specific powerup type
 };
 
 class Brick {
@@ -29,6 +32,8 @@ public:
     const Rect& bounds() const { return bounds_; }
     BrickType type() const { return type_; }
     int hitsRemaining() const { return hitsRemaining_; }
+    int assignedPowerup() const { return assignedPowerup_; }
+    void setAssignedPowerup(int powerup) { assignedPowerup_ = powerup; }
 
     bool isBreakable() const { return type_ != BrickType::Indestructible; }
     bool isDestroyed() const { return destroyed_; }
@@ -36,12 +41,13 @@ public:
     // Returns true when destroyed
     virtual bool applyHit();
 
-    BrickState state() const { return { type_, bounds_, hitsRemaining_, destroyed_ }; }
+    BrickState state() const { return { type_, bounds_, hitsRemaining_, destroyed_, assignedPowerup_ }; }
     
     // Restore state from saved snapshot
     virtual void restoreState(const BrickState& state) {
         hitsRemaining_ = state.hitsRemaining;
         destroyed_ = state.destroyed;
+        assignedPowerup_ = state.assignedPowerup;
     }
 
 protected:
@@ -51,6 +57,7 @@ protected:
     BrickType type_ { BrickType::Normal };
     int hitsRemaining_ {1};
     bool destroyed_ {false};
+    int assignedPowerup_ {-1};  // -1 = random/none, 0-4 = specific powerup
 };
 
 class NormalBrick : public Brick {

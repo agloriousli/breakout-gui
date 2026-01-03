@@ -45,6 +45,15 @@ EndgameEditorWidget::EndgameEditorWidget(QWidget* parent) : QWidget(parent) {
     auto* eraseBtn = new QPushButton(tr("Erase"), this);
     auto* clearBtn = new QPushButton(tr("Clear"), this);
     brushLabel_ = new QLabel(tr("Brush: @"), this);
+    
+    // Powerup selector dropdown
+    powerupCombo_ = new QComboBox(this);
+    powerupCombo_->addItem(tr("No Powerup"), -1);
+    powerupCombo_->addItem(tr("Expand Paddle"), 0);
+    powerupCombo_->addItem(tr("Extra Life"), 1);
+    powerupCombo_->addItem(tr("Speed Boost"), 2);
+    powerupCombo_->addItem(tr("Point Multiplier"), 3);
+    powerupCombo_->addItem(tr("Multi Ball"), 4);
 
     topRow->addWidget(new QLabel(tr("Width"), this));
     topRow->addWidget(widthSpin_);
@@ -59,6 +68,9 @@ EndgameEditorWidget::EndgameEditorWidget(QWidget* parent) : QWidget(parent) {
     topRow->addWidget(eraseBtn);
     topRow->addWidget(clearBtn);
     topRow->addWidget(brushLabel_);
+    topRow->addSpacing(12);
+    topRow->addWidget(new QLabel(tr("Powerup:"), this));
+    topRow->addWidget(powerupCombo_);
 
     table_ = new QTableWidget(this);
     table_->horizontalHeader()->setSectionResizeMode(QHeaderView::Fixed);
@@ -81,6 +93,7 @@ EndgameEditorWidget::EndgameEditorWidget(QWidget* parent) : QWidget(parent) {
     connect(indestructibleBtn, &QPushButton::clicked, this, &EndgameEditorWidget::setBrushIndestructible);
     connect(eraseBtn, &QPushButton::clicked, this, &EndgameEditorWidget::setBrushErase);
     connect(clearBtn, &QPushButton::clicked, this, &EndgameEditorWidget::clearGrid);
+    connect(powerupCombo_, QOverload<int>::of(&QComboBox::currentIndexChanged), this, &EndgameEditorWidget::onPowerupChanged);
 
     handleResize();
 }
@@ -104,15 +117,14 @@ void EndgameEditorWidget::handleResize() {
     table_->setRowCount(rows);
     table_->setColumnCount(cols);
     for (int c = 0; c < cols; ++c) {
-        table_->setColumnWidth(c, 24);
+        table_->setColumnWidth(c, 32);  // Wider to fit powerup indicators
     }
     for (int r = 0; r < rows; ++r) {
         table_->setRowHeight(r, 24);
         for (int c = 0; c < cols; ++c) {
             auto* item = new QTableWidgetItem();
-            char ch = grid_[static_cast<size_t>(r)][static_cast<size_t>(c)];
-            item->setText(QString(ch));
             table_->setItem(r, c, item);
+            updateCellDisplay(r, c);
         }
     }
 }
@@ -127,7 +139,39 @@ void EndgameEditorWidget::applyBrush(int row, int col) {
     }
     char ch = brushChar();
     grid_[static_cast<size_t>(row)][static_cast<size_t>(col)] = ch;
-    table_->item(row, col)->setText(QString(ch));
+    
+    // Store or clear powerup assignment for this cell
+    auto key = std::make_pair(row, col);
+    if (ch == ' ') {
+        // Erasing brick, remove powerup assignment
+        powerupMap_.erase(key);
+    } else if (ch != '*') {
+        // Only breakable bricks can have powerups (not indestructible)
+        powerupMap_[key] = currentPowerup_;
+    } else {
+        // Indestructible brick, no powerup
+        powerupMap_.erase(key);
+    }
+    
+    updateCellDisplay(row, col);
+}
+
+void EndgameEditorWidget::updateCellDisplay(int row, int col) {
+    char ch = grid_[static_cast<size_t>(row)][static_cast<size_t>(col)];
+    QString display = QString(ch);
+    
+    // Show powerup indicator if assigned
+    auto key = std::make_pair(row, col);
+    auto it = powerupMap_.find(key);
+    if (it != powerupMap_.end() && it->second >= 0) {
+        // Add powerup indicator: E=Expand, L=Life, S=Speed, P=Points, M=Multi
+        const char indicators[] = {'E', 'L', 'S', 'P', 'M'};
+        if (it->second >= 0 && it->second < 5) {
+            display = QString("%1%2").arg(ch).arg(indicators[it->second]);
+        }
+    }
+    
+    table_->item(row, col)->setText(display);
 }
 
 char EndgameEditorWidget::brushChar() const {
@@ -145,10 +189,15 @@ void EndgameEditorWidget::setBrushDurable() { brush_ = Brush::Durable; brushLabe
 void EndgameEditorWidget::setBrushIndestructible() { brush_ = Brush::Indestructible; brushLabel_->setText(tr("Brush: *")); }
 void EndgameEditorWidget::setBrushErase() { brush_ = Brush::Erase; brushLabel_->setText(tr("Brush: Erase")); }
 
+void EndgameEditorWidget::onPowerupChanged(int index) {
+    currentPowerup_ = powerupCombo_->itemData(index).toInt();
+}
+
 void EndgameEditorWidget::clearGrid() {
     for (auto& row : grid_) {
         std::fill(row.begin(), row.end(), ' ');
     }
+    powerupMap_.clear();
     for (int r = 0; r < table_->rowCount(); ++r) {
         for (int c = 0; c < table_->columnCount(); ++c) {
             table_->item(r, c)->setText(" ");
@@ -190,6 +239,12 @@ breakout::EndgameSnapshot EndgameEditorWidget::buildSnapshot(const QString& name
             bs.type = (ch == '@') ? BrickType::Normal : (ch == '#') ? BrickType::Durable : BrickType::Indestructible;
             bs.hitsRemaining = (bs.type == BrickType::Durable) ? 2 : 1;
             bs.bounds = {kOffsetX + c * kBrickW, kOffsetY + r * kBrickH, kBrickW, kBrickH};
+            // Assign powerup if set for this cell
+            auto key = std::make_pair(r, c);
+            auto it = powerupMap_.find(key);
+            if (it != powerupMap_.end()) {
+                bs.assignedPowerup = it->second;
+            }
             snap.bricks.push_back(bs);
         }
     }
@@ -208,6 +263,8 @@ void EndgameEditorWidget::loadSnapshot(const breakout::EndgameSnapshot& snap) {
     levelSpin_->setValue(std::max(1, snap.level));
 
     grid_.assign(rows, std::string(static_cast<size_t>(cols), ' '));
+    powerupMap_.clear();
+    
     for (const auto& b : snap.bricks) {
         int c = static_cast<int>(std::round((b.bounds.x - kOffsetX) / kBrickW));
         int r = static_cast<int>(std::round((b.bounds.y - kOffsetY) / kBrickH));
@@ -216,6 +273,11 @@ void EndgameEditorWidget::loadSnapshot(const breakout::EndgameSnapshot& snap) {
             if (b.type == BrickType::Durable) ch = '#';
             else if (b.type == BrickType::Indestructible) ch = '*';
             grid_[static_cast<size_t>(r)][static_cast<size_t>(c)] = ch;
+            
+            // Restore powerup assignment
+            if (b.assignedPowerup >= 0) {
+                powerupMap_[std::make_pair(r, c)] = b.assignedPowerup;
+            }
         }
     }
 

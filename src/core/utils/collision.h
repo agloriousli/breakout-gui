@@ -17,6 +17,7 @@ struct Rect {
     double right() const { return x + width; }
     double top() const { return y; }
     double bottom() const { return y + height; }
+    Vector2D center() const { return { x + width * 0.5, y + height * 0.5 }; }
 };
 
 struct SweptAABBResult {

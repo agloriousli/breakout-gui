@@ -3,6 +3,7 @@
 #include <QWidget>
 #include <vector>
 #include <string>
+#include <map>
 
 #include "../data/endgame_manager.h"
 
@@ -33,6 +34,7 @@ private slots:
     void setBrushIndestructible();
     void setBrushErase();
     void clearGrid();
+    void onPowerupChanged(int index);
 
 private:
     enum class Brush { Normal, Durable, Indestructible, Erase };
@@ -41,14 +43,19 @@ private:
     void applyBrush(int row, int col);
     char brushChar() const;
     bool validateEndgameDimensions(int& width, int& height) const;
+    void updateCellDisplay(int row, int col);
 
     QTableWidget* table_ {nullptr};
     QSpinBox* widthSpin_ {nullptr};
     QSpinBox* heightSpin_ {nullptr};
     QSpinBox* levelSpin_ {nullptr};
+    QComboBox* powerupCombo_ {nullptr};
     QLabel* brushLabel_ {nullptr};
     Brush brush_ {Brush::Normal};
     std::vector<std::string> grid_;
+    // Map from (row, col) to assigned powerup: -1=none, 0-4=powerup type
+    std::map<std::pair<int, int>, int> powerupMap_;
+    int currentPowerup_ {-1};  // -1=none/random
 };
 
 } // namespace breakout

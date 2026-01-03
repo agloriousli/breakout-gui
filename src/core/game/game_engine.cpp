@@ -208,15 +208,31 @@ void GameEngine::update(double deltaTime) {
         return;
     }
 
+    // Track which bricks are already destroyed before collision resolution
+    vector<bool> wasDestroyed(bricks_.size());
+    for (size_t i = 0; i < bricks_.size(); ++i) {
+        wasDestroyed[i] = bricks_[i]->isDestroyed();
+    }
+
     int destroyed = physics_.resolveBrickCollisions(ball_, bricks_, deltaTime, bigBallTimer_ > 0.0);
 
     if (destroyed > 0) {
         comboStreak_ += destroyed;
         scoreMultiplier_ = std::clamp(1 + comboStreak_ / 3, 1, 5);
         score_ += destroyed * static_cast<int>(kBrickPoints) * scoreMultiplier_ * pointMultiplier_;
-        for (int i = 0; i < destroyed; ++i) {
-            if (rng_.nextDouble(0.0, 1.0) < kPowerupSpawnChance) {
-                spawnPowerup(ball_.position());
+        
+        // Check each brick for newly destroyed status and spawn assigned powerups
+        for (size_t i = 0; i < bricks_.size(); ++i) {
+            if (!wasDestroyed[i] && bricks_[i]->isDestroyed()) {
+                // This brick was just destroyed
+                int assignedPowerup = bricks_[i]->assignedPowerup();
+                if (assignedPowerup >= 0 && assignedPowerup <= 4) {
+                    // Spawn the specific assigned powerup
+                    spawnPowerupOfType(bricks_[i]->bounds().center(), static_cast<PowerupType>(assignedPowerup));
+                } else if (rng_.nextDouble(0.0, 1.0) < kPowerupSpawnChance) {
+                    // No assigned powerup, use random spawn chance
+                    spawnPowerup(bricks_[i]->bounds().center());
+                }
             }
         }
     }
@@ -244,6 +260,14 @@ void GameEngine::spawnPowerup(const Vector2D& position) {
     else if (roll < 0.8) p.type = PowerupType::PointMultiplier;
     else p.type = PowerupType::MultiBall;
     
+    p.position = position;
+    p.velocity = {0.0, kPowerupFallSpeed};
+    powerups_.push_back(p);
+}
+
+void GameEngine::spawnPowerupOfType(const Vector2D& position, PowerupType type) {
+    Powerup p;
+    p.type = type;
     p.position = position;
     p.velocity = {0.0, kPowerupFallSpeed};
     powerups_.push_back(p);

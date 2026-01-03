@@ -77,6 +77,7 @@ private:
     int breakableBrickCount() const;
     void resetCombo();
     void spawnPowerup(const Vector2D& position);
+    void spawnPowerupOfType(const Vector2D& position, PowerupType type);
     void updatePowerups(double deltaTime);
     void applyPowerup(const struct Powerup& p);
     void clearEffects();
