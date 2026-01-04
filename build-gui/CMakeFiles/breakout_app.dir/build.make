@@ -200,7 +200,9 @@ breakout_app: CMakeFiles/breakout_app.dir/src/data/endgame_manager.cpp.o
 breakout_app: CMakeFiles/breakout_app.dir/build.make
 breakout_app: libbreakout_core.a
 breakout_app: /opt/homebrew/opt/qt/lib/QtWidgets.framework/Versions/A/QtWidgets
+breakout_app: /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Versions/A/QtMultimedia
 breakout_app: /opt/homebrew/opt/qt/lib/QtGui.framework/Versions/A/QtGui
+breakout_app: /opt/homebrew/opt/qt/lib/QtNetwork.framework/Versions/A/QtNetwork
 breakout_app: /opt/homebrew/opt/qt/lib/QtCore.framework/Versions/A/QtCore
 breakout_app: CMakeFiles/breakout_app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/glorial/breakout-gui/build-gui/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable breakout_app"

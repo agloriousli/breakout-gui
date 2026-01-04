@@ -76,127 +76,127 @@ CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o: CMakeFiles/breakout_
 CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o: /Users/glorial/breakout-gui/src/core/utils/vector2d.cpp
 CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/vector2d.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/vector2d.cpp
 
 CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/utils/vector2d.cpp > CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/utils/vector2d.cpp > CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/utils/vector2d.cpp -o CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/utils/vector2d.cpp -o CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.s
 
 CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o: CMakeFiles/breakout_core.dir/flags.make
 CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o: /Users/glorial/breakout-gui/src/core/utils/collision.cpp
 CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/collision.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/collision.cpp
 
 CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/utils/collision.cpp > CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/utils/collision.cpp > CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/utils/collision.cpp -o CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/utils/collision.cpp -o CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.s
 
 CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o: CMakeFiles/breakout_core.dir/flags.make
 CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o: /Users/glorial/breakout-gui/src/core/utils/random.cpp
 CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/random.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/random.cpp
 
 CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/utils/random.cpp > CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/utils/random.cpp > CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/utils/random.cpp -o CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/utils/random.cpp -o CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.s
 
 CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o: CMakeFiles/breakout_core.dir/flags.make
 CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o: /Users/glorial/breakout-gui/src/core/entities/ball.cpp
 CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/ball.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/ball.cpp
 
 CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/entities/ball.cpp > CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/entities/ball.cpp > CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/entities/ball.cpp -o CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/entities/ball.cpp -o CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.s
 
 CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o: CMakeFiles/breakout_core.dir/flags.make
 CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o: /Users/glorial/breakout-gui/src/core/entities/paddle.cpp
 CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/paddle.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/paddle.cpp
 
 CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/entities/paddle.cpp > CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/entities/paddle.cpp > CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/entities/paddle.cpp -o CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/entities/paddle.cpp -o CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.s
 
 CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o: CMakeFiles/breakout_core.dir/flags.make
 CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o: /Users/glorial/breakout-gui/src/core/entities/brick.cpp
 CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/brick.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/brick.cpp
 
 CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/entities/brick.cpp > CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/entities/brick.cpp > CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/entities/brick.cpp -o CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/entities/brick.cpp -o CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.s
 
 CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o: CMakeFiles/breakout_core.dir/flags.make
 CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o: /Users/glorial/breakout-gui/src/core/game/physics_engine.cpp
 CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o -c /Users/glorial/breakout-gui/src/core/game/physics_engine.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o -c /Users/glorial/breakout-gui/src/core/game/physics_engine.cpp
 
 CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/game/physics_engine.cpp > CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/game/physics_engine.cpp > CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/game/physics_engine.cpp -o CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/game/physics_engine.cpp -o CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.s
 
 CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o: CMakeFiles/breakout_core.dir/flags.make
 CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o: /Users/glorial/breakout-gui/src/core/game/level_manager.cpp
 CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o -c /Users/glorial/breakout-gui/src/core/game/level_manager.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o -c /Users/glorial/breakout-gui/src/core/game/level_manager.cpp
 
 CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/game/level_manager.cpp > CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/game/level_manager.cpp > CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/game/level_manager.cpp -o CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/game/level_manager.cpp -o CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.s
 
 CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o: CMakeFiles/breakout_core.dir/flags.make
 CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o: /Users/glorial/breakout-gui/src/core/game/game_engine.cpp
 CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o: CMakeFiles/breakout_core.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o -c /Users/glorial/breakout-gui/src/core/game/game_engine.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o -MF CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o.d -o CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o -c /Users/glorial/breakout-gui/src/core/game/game_engine.cpp
 
 CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/game/game_engine.cpp > CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/src/core/game/game_engine.cpp > CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.i
 
 CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/game/game_engine.cpp -o CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/src/core/game/game_engine.cpp -o CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.s
 
 # Object files for target breakout_core
 breakout_core_OBJECTS = \

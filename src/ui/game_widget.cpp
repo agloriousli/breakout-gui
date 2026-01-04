@@ -109,7 +109,7 @@ breakout::EndgameSnapshot scaleSnapshotToViewport(const breakout::EndgameSnapsho
         return snap;
     }
 
-    double scale = std::min(1.0, std::min(playfieldMaxWidth / src.width, playfieldMaxHeight / src.height));
+    double scale = min(1.0, min(playfieldMaxWidth / src.width, playfieldMaxHeight / src.height));
     double targetW = src.width * scale;
     double targetH = src.height * scale;
     double targetX = 16 + (playfieldMaxWidth - targetW) * 0.5;
@@ -941,7 +941,7 @@ void GameWidget::drawScene(QPainter& painter) {
     // Big ball visual enhancement
     if (engine_.isBigBallActive()) {
         // Add pulsing glow effect for big ball
-        double pulse = 0.5 + 0.5 * std::sin(static_cast<double>(effectsTimer_.elapsed()) / 150.0);
+        double pulse = 0.5 + 0.5 * sin(static_cast<double>(effectsTimer_.elapsed()) / 150.0);
         int alpha = static_cast<int>(100 * pulse);
         painter.setBrush(QColor(255, 200, 100, alpha));
         painter.setPen(Qt::NoPen);
@@ -1050,8 +1050,8 @@ void GameWidget::drawScene(QPainter& painter) {
             for (int i = 0; i < 10; ++i) {
                 float angle = i * 3.14159 / 5.0 - 3.14159 / 2.0;
                 float radius = (i % 2 == 0) ? outerR : innerR;
-                float x = cx + radius * std::cos(angle);
-                float y = cy + radius * std::sin(angle);
+                float x = cx + radius * cos(angle);
+                float y = cy + radius * sin(angle);
                 if (i == 0) star.moveTo(x, y);
                 else star.lineTo(x, y);
             }
@@ -1433,7 +1433,7 @@ void GameWidget::drawPowerBanner(QPainter& painter) {
         powerBannerVisible_ = false;
         return;
     }
-    double progress = std::clamp(static_cast<double>(elapsed) / static_cast<double>(powerBannerDurationMs_), 0.0, 1.0);
+    double progress = clamp(static_cast<double>(elapsed) / static_cast<double>(powerBannerDurationMs_), 0.0, 1.0);
     
     // Use banner region for positioning (top of combined powerup region)
     int bannerY = bannerRegion_.y();
@@ -1676,7 +1676,7 @@ void GameWidget::updateEffects() {
     
     // Remove expired impact flashes (300ms lifetime)
     impactFlashes_.erase(
-        std::remove_if(impactFlashes_.begin(), impactFlashes_.end(),
+        remove_if(impactFlashes_.begin(), impactFlashes_.end(),
             [currentTime](const ImpactFlash& flash) {
                 return (currentTime - flash.startTime) > 300;
             }),
@@ -1690,7 +1690,7 @@ void GameWidget::updateEffects() {
         particle.position += particle.velocity * deltaSeconds;
     }
     particles_.erase(
-        std::remove_if(particles_.begin(), particles_.end(),
+        remove_if(particles_.begin(), particles_.end(),
             [currentTime, this](const Particle& p) {
                 qint64 age = currentTime - p.startTime;
                 return age > 600 || 
@@ -1705,7 +1705,7 @@ void GameWidget::updateEffects() {
         popup.position += popup.velocity * deltaSeconds;
     }
     scorePopups_.erase(
-        std::remove_if(scorePopups_.begin(), scorePopups_.end(),
+        remove_if(scorePopups_.begin(), scorePopups_.end(),
             [currentTime](const ScorePopup& popup) {
                 return (currentTime - popup.startTime) > 1500;
             }),
@@ -1730,7 +1730,7 @@ void GameWidget::spawnParticles(const QPointF& center, const QColor& color) {
         // Random angle and speed
         float angle = (rand() % 360) * 3.14159f / 180.0f;
         float speed = 80.0f + (rand() % 70);
-        p.velocity = QPointF(std::cos(angle) * speed, std::sin(angle) * speed);
+        p.velocity = QPointF(cos(angle) * speed, sin(angle) * speed);
         
         p.color = color;
         p.size = 3.0f + (rand() % 3);
@@ -1787,7 +1787,7 @@ void GameWidget::drawParticles(QPainter& painter) {
         qint64 age = currentTime - particle.startTime;
         float progress = age / 600.0f; // 600ms lifetime
         int alpha = static_cast<int>(255 * (1.0f - progress));
-        alpha = std::max(0, std::min(255, alpha)); // Clamp to valid range
+        alpha = max(0, min(255, alpha)); // Clamp to valid range
         
         QColor color = particle.color;
         color.setAlpha(alpha);

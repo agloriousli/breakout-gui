@@ -123,17 +123,17 @@ void EndgameEditorWidget::handleResize() {
     int rows = heightSpin_->value();
     int cols = widthSpin_->value();
 
-    std::vector<std::string> newGrid(rows, std::string(static_cast<size_t>(cols), ' '));
+    vector<string> newGrid(rows, string(static_cast<size_t>(cols), ' '));
     int oldRows = static_cast<int>(grid_.size());
     int oldCols = oldRows > 0 ? static_cast<int>(grid_[0].size()) : 0;
-    int copyRows = std::min(rows, oldRows);
-    int copyCols = std::min(cols, oldCols);
+    int copyRows = min(rows, oldRows);
+    int copyCols = min(cols, oldCols);
     for (int r = 0; r < copyRows; ++r) {
         for (int c = 0; c < copyCols; ++c) {
             newGrid[static_cast<size_t>(r)][static_cast<size_t>(c)] = grid_[static_cast<size_t>(r)][static_cast<size_t>(c)];
         }
     }
-    grid_ = std::move(newGrid);
+    grid_ = move(newGrid);
 
     table_->setRowCount(rows);
     table_->setColumnCount(cols);
@@ -162,7 +162,7 @@ void EndgameEditorWidget::applyBrush(int row, int col) {
     grid_[static_cast<size_t>(row)][static_cast<size_t>(col)] = ch;
     
     // Store or clear powerup assignment for this cell
-    auto key = std::make_pair(row, col);
+    auto key = make_pair(row, col);
     if (ch == ' ') {
         // Erasing brick, remove powerup assignment
         powerupMap_.erase(key);
@@ -182,7 +182,7 @@ void EndgameEditorWidget::updateCellDisplay(int row, int col) {
     QString display = QString(ch);
     
     // Show powerup indicator if assigned
-    auto key = std::make_pair(row, col);
+    auto key = make_pair(row, col);
     auto it = powerupMap_.find(key);
     if (it != powerupMap_.end() && it->second >= 0) {
         // Add powerup indicator: E=Expand, L=Life, S=Speed, P=Points, M=Multi
@@ -216,7 +216,7 @@ void EndgameEditorWidget::onPowerupChanged(int index) {
 
 void EndgameEditorWidget::clearGrid() {
     for (auto& row : grid_) {
-        std::fill(row.begin(), row.end(), ' ');
+        fill(row.begin(), row.end(), ' ');
     }
     powerupMap_.clear();
     for (int r = 0; r < table_->rowCount(); ++r) {
@@ -246,7 +246,7 @@ breakout::EndgameSnapshot EndgameEditorWidget::buildSnapshot(const QString& name
     // Add substantial play area below the bricks for paddle and ball gameplay
     // The play area should be roughly 3x the brick grid height to allow proper gameplay
     double brickGridHeight = rows * kBrickH;
-    double playAreaHeight = std::max(200.0, brickGridHeight * 2.0);  // At least 200px or 2x brick height
+    double playAreaHeight = max(200.0, brickGridHeight * 2.0);  // At least 200px or 2x brick height
     double totalHeight = brickGridHeight + playAreaHeight;
     
     snap.bounds = {kOffsetX, kOffsetY, cols * kBrickW, totalHeight};
@@ -267,7 +267,7 @@ breakout::EndgameSnapshot EndgameEditorWidget::buildSnapshot(const QString& name
             bs.hitsRemaining = (bs.type == BrickType::Durable) ? 2 : 1;
             bs.bounds = {kOffsetX + c * kBrickW, kOffsetY + r * kBrickH, kBrickW, kBrickH};
             // Assign powerup if set for this cell
-            auto key = std::make_pair(r, c);
+            auto key = make_pair(r, c);
             auto it = powerupMap_.find(key);
             if (it != powerupMap_.end()) {
                 bs.assignedPowerup = it->second;
@@ -279,23 +279,23 @@ breakout::EndgameSnapshot EndgameEditorWidget::buildSnapshot(const QString& name
 }
 
 void EndgameEditorWidget::loadSnapshot(const breakout::EndgameSnapshot& snap) {
-    int cols = std::clamp(static_cast<int>(std::round(snap.bounds.width / kBrickW)), kMinSize, kMaxSize);
-    int rows = std::clamp(static_cast<int>(std::round(snap.bounds.height / kBrickH)), kMinSize, kMaxSize);
+    int cols = clamp(static_cast<int>(round(snap.bounds.width / kBrickW)), kMinSize, kMaxSize);
+    int rows = clamp(static_cast<int>(round(snap.bounds.height / kBrickH)), kMinSize, kMaxSize);
     
     // Validate loaded dimensions don't exceed safe limits
     validateEndgameDimensions(cols, rows);
     
     widthSpin_->setValue(cols);
     heightSpin_->setValue(rows);
-    levelSpin_->setValue(std::max(1, snap.level));
-    livesSpin_->setValue(std::max(1, snap.lives));
+    levelSpin_->setValue(max(1, snap.level));
+    livesSpin_->setValue(max(1, snap.lives));
 
-    grid_.assign(rows, std::string(static_cast<size_t>(cols), ' '));
+    grid_.assign(rows, string(static_cast<size_t>(cols), ' '));
     powerupMap_.clear();
     
     for (const auto& b : snap.bricks) {
-        int c = static_cast<int>(std::round((b.bounds.x - kOffsetX) / kBrickW));
-        int r = static_cast<int>(std::round((b.bounds.y - kOffsetY) / kBrickH));
+        int c = static_cast<int>(round((b.bounds.x - kOffsetX) / kBrickW));
+        int r = static_cast<int>(round((b.bounds.y - kOffsetY) / kBrickH));
         if (r >= 0 && r < rows && c >= 0 && c < cols) {
             char ch = '@';
             if (b.type == BrickType::Durable) ch = '#';
@@ -304,7 +304,7 @@ void EndgameEditorWidget::loadSnapshot(const breakout::EndgameSnapshot& snap) {
             
             // Restore powerup assignment
             if (b.assignedPowerup >= 0) {
-                powerupMap_[std::make_pair(r, c)] = b.assignedPowerup;
+                powerupMap_[make_pair(r, c)] = b.assignedPowerup;
             }
         }
     }

@@ -230,6 +230,63 @@ breakout_core_tests_autogen/timestamp: /Users/glorial/breakout-gui/CMakeLists.tx
   /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersion.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersionImpl.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaMacros.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfigVersion.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfigVersionImpl.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateDependencies.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateVersionlessAliasTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersion.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersionImpl.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateDependencies.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateVersionlessAliasTargets.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake \
@@ -1451,8 +1508,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_dev_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_clock_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_caddr_t.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h:
@@ -1476,8 +1531,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_posix_availability.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/strings.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/stdlib.h:
 
@@ -1517,13 +1570,7 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/wchar.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/version:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/variant:
-
-_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/type_traits:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/tuple:
 
@@ -1647,8 +1694,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/operation_traits.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/nat.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/make_unsigned.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/mach/machine/_structs.h:
@@ -1666,8 +1711,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/lazy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_volatile.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_unsigned_integer.h:
 
@@ -1772,10 +1815,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_base_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_always_bitcastable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cwchar:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_allocator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
 
@@ -1929,8 +1968,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/fisher_f_distribution.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/extreme_value_distribution.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/discard_block_engine.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/cauchy_distribution.h:
@@ -2005,6 +2042,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/ranges_uninitialized_algorithms.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/pointer_traits.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/errno.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/destruct_n.h:
@@ -2013,29 +2052,25 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/concepts.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/builtin_new_allocator.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator_destructor.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/align.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__mutex/mutex.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/addressof.h:
 
-/Users/glorial/breakout-gui/src/core/utils/random.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/exception_ptr.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__mbstate_t.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_fd_clr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__locale_dir/locale_base_api/bsd_locale_defaults.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__locale:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/function.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/sortable.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/segmented_iterator.h:
 
@@ -2043,47 +2078,39 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/reverse_access.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/projected.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_assignable.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/execution:
 
-/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/ostream_iterator.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/permutable.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/next.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iomanip:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/move_sentinel.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateDependencies.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/ostreambuf_iterator.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/convert_to_integral.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/move_iterator.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/limits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/mergeable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/apply_cv.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/poisson_distribution.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/hash.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator_traits.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/operations.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/insert_iterator.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/errno.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/malloc/_malloc.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/indirectly_comparable.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cerrno:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/distance.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_scalar.h:
 
@@ -2091,11 +2118,7 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/cpp17_iterator_concepts.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/shift_left.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/concepts.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/common_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/bounded_iter.h:
 
@@ -2109,25 +2132,17 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/as_const.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_uint16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/streambuf.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__debug_utils/strict_weak_ordering_check.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/istream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/ios.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/array.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/weak_result_type.h:
-
-_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/unique_copy.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/data.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/unreachable.h:
 
@@ -2151,9 +2166,9 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/not_fn.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/iter_swap.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/sortable.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/identity.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/function.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_wint_t.h:
 
@@ -2207,15 +2222,11 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path_iterator.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/can_extract_key.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/memory_resource.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_type.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_fun_result.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_time_type.h:
 
@@ -2225,21 +2236,17 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_options.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/machine/types.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_copy_assignable.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_entry.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/prev.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/terminate.h:
+
+/Users/glorial/breakout-gui/src/core/utils/random.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__mbstate_t.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-release.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/exception_ptr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int64_t.h:
 
@@ -2262,8 +2269,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/predicate.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/array:
 
@@ -2289,18 +2294,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/boolean_testable.h:
 
-/opt/homebrew/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/for_each_n.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/erase_if_container.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6/Qt6Targets.cmake:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/empty.h:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6CorePlugins.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/count.h:
@@ -2317,13 +2310,7 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/partial_order.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/errno.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/front_insert_iterator.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/ordering.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/move_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/compare_strong_order_fallback.h:
 
@@ -2339,7 +2326,13 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/year.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/common_iterator.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/apply_cv.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/poisson_distribution.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator_traits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/hash.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_key_t.h:
 
@@ -2351,6 +2344,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/system_clock.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginAdditionalTargetInfo.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_move.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/statically_widen.h:
@@ -2361,9 +2356,9 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/boyer_moore_searcher.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_regex.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/equal_range.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_regex.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/month.h:
 
@@ -2382,10 +2377,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/convert_to_timespec.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsPrivateVersionlessAliasTargets.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/any:
 
@@ -2407,14 +2398,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__charconv/to_chars_result.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/popcount.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_wchar_t.h:
@@ -2431,6 +2414,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/machine/_mcontext.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/countl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/binary_function.h:
@@ -2442,10 +2427,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/bit_floor.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/bit_cast.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ios/fpos.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__availability:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicAppleHelpers.cmake:
 
@@ -2477,11 +2458,15 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/hash.h:
 
+_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/data.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/unique_copy.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_execution_policy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/three_way_comp_ref_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/swap_ranges.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/minmax.h:
 
@@ -2533,17 +2518,13 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_if.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/optional:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/time_point.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy_n.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/time_point.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove.h:
 
@@ -2563,9 +2544,11 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_sample.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_rotate_copy.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_rotate.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/istream.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__debug_utils/strict_weak_ordering_check.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 
@@ -2580,12 +2563,6 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_minmax.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_replace_copy_if.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__system_error/errc.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_count_if.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/auto_ptr.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_replace_copy.h:
 
@@ -2602,6 +2579,8 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_pop_heap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_partition_point.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
 
@@ -2633,12 +2612,6 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_min.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_merge.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_make_heap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/view_interface.h:
@@ -2646,12 +2619,6 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets-release.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_lower_bound.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_ctype.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/is_always_lock_free.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted_until.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted.h:
 
@@ -2671,16 +2638,6 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_is_heap.h:
 
-_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/operations.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/compare_partial_order_fallback.h:
-
-/Users/glorial/breakout-gui/src/core/entities/ball.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_inplace_merge.h:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_includes.h:
@@ -2688,10 +2645,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_intmax_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_generate_n.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/pair.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/istream_iterator.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/__stddef_rsize_t.h:
 
@@ -2735,6 +2688,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_copy.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfigVersion.cmake:
+
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_binary_search.h:
@@ -2762,10 +2717,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_is_partitioned.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_frontend_dispatch.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/assume_aligned.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_fill.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBusPrivate/Qt6DBusPrivateAdditionalTargetInfo.cmake:
 
@@ -2815,6 +2766,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/ratio:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/any_of.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake:
@@ -2841,29 +2794,47 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/none_of.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/next_permutation.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/ranges_operations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/move.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/to_underlying.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/string:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
+/opt/homebrew/opt/qt/lib/cmake/Qt6CorePrivate/Qt6CorePrivateAdditionalTargetInfo.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/includes.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/includes.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/min_element.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/min.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_void.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/merge.h:
+
+/Users/glorial/breakout-gui/src/core/game/level_manager.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/datasizeof.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/max_element.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/make_projected.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/lower_bound.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare_three_way.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/identity.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/iter_swap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_sorted_until.h:
 
@@ -2873,17 +2844,19 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_partitioned.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/utility:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cwctype:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_heap_until.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_s_ifmt.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/all_of.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_heap.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-release.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/min_max_result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/inplace_merge.h:
 
@@ -2891,13 +2864,153 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_in_result.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/sample.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/_limits.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_found_result.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/signal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/generate.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/erase_if_container.h:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/for_each_n.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/for_each.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/stable_partition.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_if_not.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/lognormal_distribution.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_if.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_end.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/fill.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginDependencies.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/string.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/chi_squared_distribution.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_find.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_useconds_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy_if.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_stdlib.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginAdditionalTargetInfo.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/different_from.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/binary_negate.h:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backend.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/string_view:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/equal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/unwrap_ref.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/mergeable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/limits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/id.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/any_of.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_generate.h:
+
+/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:
+
+/opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/alloca.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_uintmax_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_lexicographical_compare.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/unique.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_nl_item.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_pthread/_pthread_types.h:
+
+/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/get.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/invoke.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6CorePrivate/Qt6CorePrivateConfigVersion.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersionImpl.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_stdio.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/maybe_const.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/compare_weak_order_fallback.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/is_always_lock_free.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_ctype.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginConfig.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/size.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/__wctype.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/TargetConditionals.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/to_underlying.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_first_of.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets-release.cmake:
 
@@ -2912,144 +3025,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 /opt/homebrew/opt/qt/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/AvailabilityInternalLegacy.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_first_of.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_end.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/any_of.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/id.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_set_union.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/buffer.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/unordered_map:
-
-CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QMacHeifPluginConfig.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/string_view:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/equal.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginDependencies.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/string.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsPrivateConfigVersionImpl.cmake:
-
-/opt/homebrew/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/half_positive.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/stable_partition.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_if_not.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/chi_squared_distribution.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_find.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_useconds_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy_if.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_stdlib.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/comp.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/different_from.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/fstream.h:
-
-/opt/homebrew/share/cmake/Modules/Linker/AppleClang-CXX.cmake:
-
-/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:
-
-_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/max.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/binary_negate.h:
-
-/opt/homebrew/lib/cmake/Qt6/QtPublicSbomHelpers.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/types.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backend.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/generate.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/signal.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/endian.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/builtin_new_allocator.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_generate.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/alloca.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/steady_clock.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_uintmax_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_lexicographical_compare.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/unique.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_nl_item.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/lower_bound.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_pthread/_pthread_types.h:
-
-/opt/homebrew/share/cmake/Modules/FindPackageMessage.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/get.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/invoke.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6CorePrivate/Qt6CorePrivateConfigVersion.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_stdio.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/maybe_const.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/compare_weak_order_fallback.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginConfig.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/size.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/__wctype.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/TargetConditionals.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/lognormal_distribution.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/result_of.h:
 
@@ -3073,17 +3048,23 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake:
+
 /opt/homebrew/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake:
 
 /opt/homebrew/share/cmake/Modules/MacroAddFileDependencies.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/insert_iterator.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginAdditionalTargetInfo.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/operations.h:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/make_heap.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/transform.h:
 
@@ -3094,14 +3075,6 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 /opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsPrivateDependencies.cmake:
 
 /opt/homebrew/share/cmake/Modules/GoogleTest.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_rsize_t.h:
-
-/opt/homebrew/lib/cmake/Qt6/QtFeatureCommon.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/ranges_construct_at.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_permutation.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
 
@@ -3119,27 +3092,17 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/share/cmake/Modules/FindThreads.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/execution:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/ostream_iterator.h:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginDependencies.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_assignable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/permutable.h:
+
+/opt/homebrew/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_unique.h:
 
 /opt/homebrew/share/cmake/Modules/FindOpenGL.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__undef_macros:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
-
-/opt/homebrew/share/cmake/Modules/FetchContent.cmake:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-release.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/declval.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/generate_n.h:
 
 /opt/homebrew/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake:
 
@@ -3159,13 +3122,25 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_stable_sort.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_in_out_result.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake:
+
 /opt/homebrew/share/cmake/Modules/Compiler/Clang.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_locale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/u8path.h:
 
-/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/iomanip:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/ostreambuf_iterator.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateDependencies.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersion.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/_types.h:
 
@@ -3173,11 +3148,11 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake:
 
-/opt/homebrew/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateConfigVersion.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/concepts.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/shift_left.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__string/constexpr_c_functions.h:
 
@@ -3193,10 +3168,6 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6/QtInstallPaths.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/compressed_pair.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/nth_element.h:
 
 /opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake:
@@ -3207,13 +3178,9 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_uint64_t.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/type_list.h:
 
@@ -3235,7 +3202,9 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy_backward.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/unreachable_sentinel.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsPrivateVersionlessAliasTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/partition.h:
 
@@ -3261,19 +3230,11 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocation_guard.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/merge.h:
-
-/Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h:
-
-/opt/homebrew/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6/Qt6Dependencies.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/convertible_to.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ct_rune_t.h:
 
@@ -3283,19 +3244,141 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateDependencies.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_rotate_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/strings.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersionImpl.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/fstream.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateVersionlessAliasTargets.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets-release.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_replace.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateAdditionalTargetInfo.cmake:
+
+/Users/glorial/breakout-gui/src/core/entities/paddle.h:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/remove_all_extents.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/endian.h:
+
+/opt/homebrew/share/cmake/Modules/CheckCXXCompilerFlag.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkTargets-release.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted_until.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-release.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/pair.h:
+
+/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginConfig.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/shuffle.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/version:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/comp.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/typeinfo:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateVersionlessAliasTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_clock_t.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateAdditionalTargetInfo.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-release.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets-release.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/merge.h:
+
+/Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h:
+
+/opt/homebrew/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets-release.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ios/fpos.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__availability:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/extreme_value_distribution.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__undef_macros:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_copy_if.h:
+
+/opt/homebrew/share/cmake/Modules/FetchContent.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/search.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/next_permutation.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/nat.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/malloc/_malloc.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/indirectly_comparable.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaMacros.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__mutex/unique_lock.h:
 
 /opt/homebrew/lib/cmake/Qt6/FindWrapAtomic.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets-release.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/string:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6CorePrivate/Qt6CorePrivateAdditionalTargetInfo.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/mismatch.h:
 
 /opt/homebrew/share/cmake/Modules/CMakeLanguageInformation.cmake:
 
@@ -3311,23 +3394,19 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6CoreTargets-release.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfig.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateVersionlessAliasTargets.cmake:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginDependencies.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/default_random_engine.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/temp_value.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/count_if.h:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/unordered_map:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QMacHeifPluginConfig.cmake:
+
+CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
 
@@ -3337,9 +3416,17 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateTargets.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_sorted.h:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateConfigVersion.cmake:
+
 /opt/homebrew/share/cmake/Modules/GNUInstallDirs.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfigVersionImpl.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
@@ -3353,6 +3440,20 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateConfigVersionImpl.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_regex.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstdarg:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_pod.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/geometric_distribution.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_out_result.h:
+
+/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/is_seed_sequence.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__bit/bit_log2.h:
@@ -3363,21 +3464,15 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic_init.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/empty.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginConfig.cmake:
+/opt/homebrew/opt/qt/lib/cmake/Qt6/Qt6Targets.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6GuiTargets-release.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_push_heap.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iter_move.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/for_each_segment.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_search.h:
 
@@ -3411,9 +3506,21 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/sample.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QTgaPluginTargets-release.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/mem_fn.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/declval.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/generate_n.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-release.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake:
 
@@ -3424,6 +3531,18 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBusPrivate/Qt6DBusPrivateDependencies.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QPdfPluginTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/can_extract_key.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/memory_resource.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_type.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginTargets-release.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/format_to_n_result.h:
 
@@ -3449,11 +3568,29 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-release.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/for_each_segment.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cwchar:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_allocator.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__system_error/errc.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/auto_ptr.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_count_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_fsfilcnt_t.h:
 
@@ -3461,9 +3598,27 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6CoreConfig.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfig.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/temp_value.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/count_if.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginDependencies.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/default_random_engine.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/move_iterator.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersion.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake:
 
@@ -3493,21 +3648,21 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/share/cmake/Modules/Platform/UnixPaths.cmake:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets-release.cmake:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsPrivateConfigVersion.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_set_union.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/buffer.h:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginConfig.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/noexcept_move_assign_container.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/arch.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_intptr_t.h:
 
@@ -3541,10 +3696,6 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic_lock_free.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/pair.h:
-
-/opt/homebrew/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
@@ -3556,14 +3707,6 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QICNSPluginTargets-release.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_replace.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_found_result.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/_limits.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake:
 
@@ -3591,8 +3734,6 @@ breakout_core_tests_autogen/mocs_compilation.cpp:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/lexicographical_compare_three_way.h:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginConfig.cmake:
 
 _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
@@ -3616,6 +3757,12 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QWbmpPluginAdditionalTargetInfo.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginConfig.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/half_positive.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsPrivateConfigVersionImpl.cmake:
+
+/opt/homebrew/lib/cmake/Qt6/QtPublicTargetHelpers.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/rank.h:
 
@@ -3645,7 +3792,7 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_in_out_result.h:
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/decay.h:
 
@@ -3654,16 +3801,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBus/Qt6DBusTargets-release.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/utility:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cwctype:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_heap_until.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/qos.h:
 
@@ -3685,12 +3822,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBusPrivate/Qt6DBusPrivateConfigVersion.cmake:
 
-/Users/glorial/breakout-gui/src/core/game/level_manager.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/datasizeof.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/max_element.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/uniform_random_bit_generator_adaptor.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_copy_n.h:
@@ -3710,6 +3841,16 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_set_symmetric_difference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_uint8_t.h:
+
+_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/operations.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/compare_partial_order_fallback.h:
+
+/Users/glorial/breakout-gui/src/core/entities/ball.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_inplace_merge.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets.cmake:
 
@@ -3755,6 +3896,14 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/push_heap.h:
 
+_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/type_traits:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateTargets.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__variant/monostate.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets-release.cmake:
@@ -3765,7 +3914,11 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginDependencies.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__locale:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/swap_ranges.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
@@ -3777,11 +3930,15 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_remove_copy_if.h:
 
+_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/max.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6/Qt6ConfigExtras.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/shuffle.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_null_pointer.h:
 
@@ -3791,31 +3948,21 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginDependencies.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iter_move.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_push_heap.h:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginAdditionalTargetInfo.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_fsblkcnt_t.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/convert_to_integral.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/iterator.h:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets-release.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/synth_three_way.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_transform.h:
 
 /opt/homebrew/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_wctype.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h:
 
@@ -3835,6 +3982,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6CorePrivate/Qt6CorePrivateConfigVersionImpl.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake:
@@ -3842,14 +3991,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_move_constructible.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/pointer_traits.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_fd_def.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/underlying_type.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/clamp.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6/Qt6Config.cmake:
 
@@ -3861,9 +4002,15 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginAdditionalTargetInfo.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/search.h:
+/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginConfig.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_merge.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets-release.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake:
 
@@ -3875,13 +4022,19 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/is_pointer_in_range.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6/Qt6ConfigVersion.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateTargets.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/min.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cerrno:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/distance.h:
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_ssize_t.h:
 
@@ -3895,21 +4048,15 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/typeinfo:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/istream_iterator.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/pair.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicGitHelpers.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_regex.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator_traits.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/cstdarg:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_pod.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/geometric_distribution.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_out_result.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__compare/synth_three_way.h:
 
 /opt/homebrew/share/cmake/Modules/Platform/Apple-Clang.cmake:
 
@@ -3920,6 +4067,14 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/prev.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/copy_options.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateDependencies.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
 
@@ -3937,21 +4092,29 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_void.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/merge.h:
-
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBusPrivate/Qt6DBusPrivateConfig.cmake:
 
-/Users/glorial/breakout-gui/src/core/entities/paddle.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/machine/types.h:
 
-/opt/homebrew/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_trivially_destructible.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_copy_assignable.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__atomic/atomic_flag.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/xlocale/_stdio.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets.cmake:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/ranges_construct_at.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/is_permutation.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_rsize_t.h:
+
+/opt/homebrew/lib/cmake/Qt6/QtFeatureCommon.cmake:
 
 _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
@@ -3961,41 +4124,49 @@ _deps/googletest-src/googletest/include/gtest/gtest_prod.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginAdditionalTargetInfo.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/fill.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/format_fwd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_arithmetic.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/day.h:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake:
-
-/opt/homebrew/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perms.h:
 
-/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/min_max_result.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-release.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/assume_aligned.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/pstl_fill.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QVirtualKeyboardPluginTargets-release.cmake:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/remove_cvref.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_fd_def.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/align.h:
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/underlying_type.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/clamp.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/compressed_pair.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6/QtInstallPaths.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/unistd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config_site:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_types/_wctrans_t.h:
-
-/opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-release.cmake:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/next.h:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake:
 

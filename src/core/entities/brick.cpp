@@ -55,14 +55,14 @@ bool Brick::applyHit() {
  * @param bounds The position and size of the brick
  * @return Unique pointer to the created brick, or nullptr for unknown symbols
  */
-std::unique_ptr<Brick> BrickFactory::createFromChar(char symbol, const Rect& bounds) {
+unique_ptr<Brick> BrickFactory::createFromChar(char symbol, const Rect& bounds) {
     switch (symbol) {
         case '@':
-            return std::make_unique<NormalBrick>(bounds);
+            return make_unique<NormalBrick>(bounds);
         case '#':
-            return std::make_unique<DurableBrick>(bounds, 2);
+            return make_unique<DurableBrick>(bounds, 2);
         case '*':
-            return std::make_unique<IndestructibleBrick>(bounds);
+            return make_unique<IndestructibleBrick>(bounds);
         default:
             return nullptr;
     }

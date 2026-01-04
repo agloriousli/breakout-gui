@@ -1,0 +1,86 @@
+[
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/vector2d.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/utils/vector2d.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/utils/vector2d.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/collision.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/utils/collision.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/utils/collision.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o -c /Users/glorial/breakout-gui/src/core/utils/random.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/utils/random.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/utils/random.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/ball.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/entities/ball.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/entities/ball.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/paddle.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/entities/paddle.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/entities/paddle.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o -c /Users/glorial/breakout-gui/src/core/entities/brick.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/entities/brick.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/entities/brick.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o -c /Users/glorial/breakout-gui/src/core/game/physics_engine.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/game/physics_engine.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/game/physics_engine.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o -c /Users/glorial/breakout-gui/src/core/game/level_manager.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/game/level_manager.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/game/level_manager.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -g -std=gnu++17 -arch arm64 -fPIC -Wall -Wextra -Wpedantic -o CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o -c /Users/glorial/breakout-gui/src/core/game/game_engine.cpp",
+  "file": "/Users/glorial/breakout-gui/src/core/game/game_engine.cpp",
+  "output": "CMakeFiles/breakout_core.dir/src/core/game/game_engine.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/src -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/include -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest -g -std=gnu++17 -arch arm64 -fPIE -o CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o -c /Users/glorial/breakout-gui/tests/core_tests.cpp",
+  "file": "/Users/glorial/breakout-gui/tests/core_tests.cpp",
+  "output": "CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/build/_deps/googletest-src/googlemock/include -I/Users/glorial/breakout-gui/build/_deps/googletest-src/googlemock -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/include -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64 -fPIC  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /Users/glorial/breakout-gui/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/Users/glorial/breakout-gui/build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/clang++  -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googlemock/include -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googlemock -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/include -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64 -fPIC  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /Users/glorial/breakout-gui/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/Users/glorial/breakout-gui/build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/clang++  -I/Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/include -I/Users/glorial/breakout-gui/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64 -fPIC  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+},
+{
+  "directory": "/Users/glorial/breakout-gui/build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/clang++  -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/include -isystem /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest -g -std=c++17 -arch arm64 -fPIC  -DGTEST_HAS_PTHREAD=1   -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/Users/glorial/breakout-gui/build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
+}
+]

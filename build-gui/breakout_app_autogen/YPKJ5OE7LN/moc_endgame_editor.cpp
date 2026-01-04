@@ -49,7 +49,9 @@ template <> constexpr inline auto breakout::EndgameEditorWidget::qt_create_metao
         "setBrushDurable",
         "setBrushIndestructible",
         "setBrushErase",
-        "clearGrid"
+        "clearGrid",
+        "onPowerupChanged",
+        "index"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -71,6 +73,10 @@ template <> constexpr inline auto breakout::EndgameEditorWidget::qt_create_metao
         QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'clearGrid'
         QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onPowerupChanged'
+        QtMocHelpers::SlotData<void(int)>(12, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::Int, 13 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -102,6 +108,7 @@ void breakout::EndgameEditorWidget::qt_static_metacall(QObject *_o, QMetaObject:
         case 5: _t->setBrushIndestructible(); break;
         case 6: _t->setBrushErase(); break;
         case 7: _t->clearGrid(); break;
+        case 8: _t->onPowerupChanged((*reinterpret_cast< std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
@@ -130,14 +137,14 @@ int breakout::EndgameEditorWidget::qt_metacall(QMetaObject::Call _c, int _id, vo
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

@@ -25,7 +25,7 @@ namespace breakout {
 namespace {
 
 inline double clamp(double value, double minVal, double maxVal) {
-    return std::max(minVal, std::min(value, maxVal));
+    return max(minVal, min(value, maxVal));
 }
 
 }
@@ -57,8 +57,8 @@ Vector2D PhysicsEngine::calculatePaddleReflection(const Vector2D& incomingVeloci
     exitAngle = clamp(exitAngle, M_PI / 6.0, 5.0 * M_PI / 6.0);
 
     double speed = incomingVelocity.length();
-    double vx = speed * std::cos(exitAngle);
-    double vy = -speed * std::sin(exitAngle);
+    double vx = speed * cos(exitAngle);
+    double vy = -speed * sin(exitAngle);
     return { vx, vy };
 }
 
@@ -79,11 +79,11 @@ void PhysicsEngine::resolveWallCollision(Ball& ball, const Rect& bounds) const {
         vel.setY(-vel.y());
         
         // Prevent perfectly vertical bounces by adding small horizontal component
-        if (std::abs(vel.x()) < 0.1) {
+        if (abs(vel.x()) < 0.1) {
             double speed = vel.length();
             double minAngle = 0.1; // Small angle to prevent vertical bounce
             vel.setX(speed * minAngle * (vel.x() >= 0 ? 1.0 : -1.0));
-            vel.setY(-std::sqrt(speed * speed - vel.x() * vel.x()));
+            vel.setY(-sqrt(speed * speed - vel.x() * vel.x()));
         }
     }
 
@@ -110,14 +110,14 @@ bool PhysicsEngine::resolvePaddleCollision(Ball& ball, const Paddle& paddle) con
     return true;
 }
 
-int PhysicsEngine::resolveBrickCollisions(Ball& ball, std::vector<std::unique_ptr<Brick>>& bricks, double deltaTime, bool bigBallMode) const {
+int PhysicsEngine::resolveBrickCollisions(Ball& ball, vector<unique_ptr<Brick>>& bricks, double deltaTime, bool bigBallMode) const {
     int destroyed = 0;
     double remainingTime = 1.0;
     Vector2D velocity = ball.velocity();
 
     for (int iteration = 0; iteration < 3 && remainingTime > 0.0; ++iteration) {
         double earliest = 1.0;
-        double hitDistance = std::numeric_limits<double>::max();
+        double hitDistance = numeric_limits<double>::max();
         size_t hitIndex = bricks.size();
         Vector2D hitNormal {0.0, 0.0};
         
@@ -139,7 +139,7 @@ int PhysicsEngine::resolveBrickCollisions(Ball& ball, std::vector<std::unique_pt
                 double brickCenterY = box.y + box.height * 0.5;
                 double dx = brickCenterX - ball.position().x();
                 double dy = brickCenterY - ball.position().y();
-                double distance = std::sqrt(dx * dx + dy * dy);
+                double distance = sqrt(dx * dx + dy * dy);
                 
                 // Primary criterion: collision time (significantly earlier wins)
                 if (result.time < earliest - TIME_EPSILON) {
@@ -149,7 +149,7 @@ int PhysicsEngine::resolveBrickCollisions(Ball& ball, std::vector<std::unique_pt
                     hitNormal = result.normal;
                 }
                 // Tie-breaker: if times are approximately equal, pick closer brick
-                else if (std::abs(result.time - earliest) <= TIME_EPSILON && distance < hitDistance) {
+                else if (abs(result.time - earliest) <= TIME_EPSILON && distance < hitDistance) {
                     earliest = result.time;
                     hitDistance = distance;
                     hitIndex = i;
@@ -190,7 +190,7 @@ int PhysicsEngine::resolveBrickCollisions(Ball& ball, std::vector<std::unique_pt
                     double brickCenterY = brickBox.y + brickBox.height * 0.5;
                     double dx = brickCenterX - ballCenter.x();
                     double dy = brickCenterY - ballCenter.y();
-                    double distance = std::sqrt(dx * dx + dy * dy);
+                    double distance = sqrt(dx * dx + dy * dy);
                     
                     if (distance <= destructionRadius) {
                         if (bricks[i]->applyHit()) {  // Returns true if destroyed

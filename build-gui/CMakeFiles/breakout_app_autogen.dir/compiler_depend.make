@@ -1180,6 +1180,17 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
   /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
   /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QAudioOutput \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QMediaPlayer \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QSoundEffect \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qaudio.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qaudiooutput.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qmediaplayer.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qsoundeffect.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtaudio.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimedia-config.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaexports.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaglobal.h \
   /opt/homebrew/bin/cmake \
   /opt/homebrew/lib/cmake/Qt6/FindWrapAtomic.cmake \
   /opt/homebrew/lib/cmake/Qt6/FindWrapOpenGL.cmake \
@@ -1405,6 +1416,63 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
   /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-release.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersion.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersionImpl.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaMacros.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfigVersion.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfigVersionImpl.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateDependencies.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateVersionlessAliasTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateAdditionalTargetInfo.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfig.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersion.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersionImpl.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateDependencies.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateTargets.cmake \
+  /opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateVersionlessAliasTargets.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake \
   /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake \
@@ -1525,7 +1593,45 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake:
 
-/opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake:
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersionImpl.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateAdditionalTargetInfo.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginAdditionalTargetInfo.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets-release.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginTargets.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkPlugins.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkDependencies.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateVersionlessAliasTargets.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginTargets-release.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginConfig.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaDependencies.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersionImpl.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake:
 
@@ -1651,6 +1757,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6CorePrivate/Qt6CorePrivateConfigVersionImpl.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6CorePrivate/Qt6CorePrivateConfigVersion.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets.cmake:
@@ -1755,6 +1863,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginTargets-release.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake:
 
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
@@ -1772,6 +1882,14 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QPdfPluginConfig.cmake:
 
 /opt/homebrew/bin/cmake:
+
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qmediaplayer.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake:
+
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qaudiooutput.h:
+
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QMediaPlayer:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake:
 
@@ -1821,6 +1939,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/QDialogButtonBox:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets.cmake:
+
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtGui.framework/Versions/A/Headers/qvalidator.h:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtGui.framework/Versions/A/Headers/qtransform.h:
@@ -1842,6 +1962,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtGui.framework/Versions/A/Headers/qpicture.h:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtGui.framework/Versions/A/Headers/qpen.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginConfig.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtGui.framework/Versions/A/Headers/qpalette.h:
 
@@ -1877,6 +1999,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qvariant.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateDependencies.cmake:
+
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qurl.h:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h:
@@ -1896,6 +2020,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qtformat_impl.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginConfig.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h:
 
@@ -1962,6 +2088,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qobject.h:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qminmax.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets-release.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qmetatype.h:
 
@@ -2051,6 +2179,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qbytearraylist.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateTargets.cmake:
+
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qatomic.h:
@@ -2100,6 +2230,8 @@ breakout_app_autogen/timestamp: /Library/Developer/CommandLineTools/SDKs/MacOSX1
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/QElapsedTimer:
 
 /opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginTargets.cmake:
 
 /Users/glorial/breakout-gui/src/ui/main_window.cpp:
 
@@ -2213,9 +2345,13 @@ CMakeFiles/4.0.2/CMakeSystem.cmake:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBusPrivate/Qt6DBusPrivateVersionlessAliasTargets.cmake:
 
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QAudioOutput:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_fd_isset.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_dev_t.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateAdditionalTargetInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_clock_t.h:
 
@@ -2261,6 +2397,8 @@ CMakeFiles/4.0.2/CMakeSystem.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/wchar.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/version:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/variant:
@@ -2280,6 +2418,10 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/typeinfo:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkTargets.cmake:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateTargets.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qtextstream.h:
 
@@ -2334,6 +2476,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/destruct_n.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/errno.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_allocator.h:
 
@@ -2404,6 +2548,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/cmp.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/auto_cast.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkConfig.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/streambuf.h:
 
@@ -2503,6 +2649,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/deque:
 
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qaudio.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_signed.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-release.cmake:
@@ -2563,6 +2711,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_member_object_pointer.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaPlugins.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/nat.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_literal_type.h:
@@ -2588,6 +2738,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_primary_template.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_convertible.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfig.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_time_type.h:
 
@@ -2667,7 +2819,11 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/add_volatile.h:
 
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimedia-config.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tuple/tuple_types.h:
+
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtaudio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__threading_support:
 
@@ -2765,6 +2921,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/is_valid.h:
 
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaexports.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_pod.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_out_result.h:
@@ -2794,6 +2952,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_aggregate.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginAdditionalTargetInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/extreme_value_distribution.h:
 
@@ -2921,6 +3081,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets-release.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_valid_expansion.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h:
@@ -2928,6 +3090,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__mutex/mutex.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/addressof.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QGlibNetworkInformationPluginTargets-release.cmake:
 
 /Users/glorial/breakout-gui/src/core/utils/random.h:
 
@@ -2991,6 +3155,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/next.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaConfigVersion.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/move_iterator.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6DBusPrivate/Qt6DBusPrivateConfigVersion.cmake:
@@ -3003,9 +3169,13 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/istreambuf_iterator.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSecureTransportBackendPluginAdditionalTargetInfo.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/operations.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__iterator/insert_iterator.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaMacros.cmake:
 
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qlocale.h:
 
@@ -3191,6 +3361,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__format/buffer.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginTargets-release.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/_locale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/u8path.h:
@@ -3281,6 +3453,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_stable_sort.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfigVersionImpl.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/same_as.h:
@@ -3306,6 +3480,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/equality_comparable.h:
+
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qsoundeffect.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_fill.h:
 
@@ -3412,6 +3588,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /opt/homebrew/opt/qt/lib/cmake/Qt6WidgetsPrivate/Qt6WidgetsPrivateTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__exception/nested_exception.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QSCNetworkReachabilityNetworkInformationPluginAdditionalTargetInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_move.h:
 
@@ -3591,6 +3769,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/temp_value.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h:
@@ -3689,6 +3869,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_starts_with.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaAdditionalTargetInfo.cmake:
+
 /opt/homebrew/opt/qt/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_partition.h:
@@ -3775,6 +3957,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__ranges/size.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6QDarwinMediaPluginAdditionalTargetInfo.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/copy.h:
 
 /opt/homebrew/opt/qt/lib/cmake/Qt6GuiPrivate/Qt6GuiPrivateConfig.cmake:
@@ -3810,6 +3994,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_partition_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__config:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6NetworkTargets-release.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/remove_copy.h:
 
@@ -3908,6 +4094,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__concepts/assignable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_for_each.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/vector:
 
@@ -4203,6 +4391,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted_until.h:
 
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QSoundEffect:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/ostream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/all_of.h:
@@ -4285,6 +4475,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/equal.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateVersionlessAliasTargets.cmake:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__fwd/fstream.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/max.h:
@@ -4323,6 +4515,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/find_end.h:
 
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateConfigVersion.cmake:
+
 /opt/homebrew/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_binary_search.h:
@@ -4330,6 +4524,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtCore.framework/Versions/A/Headers/qanystringview.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/memory:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/in_in_out_result.h:
 
@@ -4344,6 +4540,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_replace_if.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__type_traits/is_abstract.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateConfigVersion.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/arm/_types.h:
 
@@ -4364,6 +4562,10 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_lexicographical_compare.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__random/bernoulli_distribution.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6MultimediaPrivate/Qt6MultimediaPrivateDependencies.cmake:
+
+/opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaglobal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__memory/allocate_at_least.h:
 
@@ -4416,6 +4618,8 @@ CMakeFiles/4.0.2/CMakeCXXCompiler.cmake:
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__utility/terminate_on_exception.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__algorithm/ranges_clamp.h:
+
+/opt/homebrew/opt/qt/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/sys/_types/_timespec.h:
 

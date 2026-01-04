@@ -1203,6 +1203,17 @@ CMakeFiles/breakout_app.dir/src/ui/main_window.cpp.o: \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qeventloop.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qdeadlinetimer.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QWidget \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/QSoundEffect \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qsoundeffect.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qtmultimediaglobal.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qtmultimedia-config.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qtmultimediaexports.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qaudio.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/QMediaPlayer \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qmediaplayer.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qtaudio.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/QAudioOutput \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qaudiooutput.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/deque \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QPointF \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QColor \

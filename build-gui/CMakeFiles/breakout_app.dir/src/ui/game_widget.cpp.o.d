@@ -1094,6 +1094,18 @@ CMakeFiles/breakout_app.dir/src/ui/game_widget.cpp.o: \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/QPushButton \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers/qabstractbutton.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/QSoundEffect \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qsoundeffect.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qtmultimediaglobal.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qtmultimedia-config.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qtmultimediaexports.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qaudio.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qurl.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/QMediaPlayer \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qmediaplayer.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qtaudio.h \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/QAudioOutput \
+  /opt/homebrew/opt/qt/lib/QtMultimedia.framework/Headers/qaudiooutput.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/deque \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QPointF \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QColor \
@@ -1146,12 +1158,15 @@ CMakeFiles/breakout_app.dir/src/ui/game_widget.cpp.o: \
   /Users/glorial/breakout-gui/src/ui/../data/config_manager.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QString \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QStringList \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QCoreApplication \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qcoreapplication.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qcoreevent.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qnativeinterface.h \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qcoreapplication_platform.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QFont \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QKeyEvent \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qevent.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qcoreevent.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qiodevice.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qurl.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qeventpoint.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qvector2d.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qvectornd.h \
@@ -1164,11 +1179,8 @@ CMakeFiles/breakout_app.dir/src/ui/game_widget.cpp.o: \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QSize \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QSizeF \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QTransform \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qnativeinterface.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qscreen_platform.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qguiapplication.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qcoreapplication.h \
-  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qcoreapplication_platform.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qinputmethod.h \
   /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/qlocale.h \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/qguiapplication_platform.h \
@@ -1181,4 +1193,5 @@ CMakeFiles/breakout_app.dir/src/ui/game_widget.cpp.o: \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QPaintEvent \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QResizeEvent \
   /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QLinearGradient \
-  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QPolygonF
+  /opt/homebrew/opt/qt/lib/QtGui.framework/Headers/QPolygonF \
+  /opt/homebrew/opt/qt/lib/QtCore.framework/Headers/QUrl

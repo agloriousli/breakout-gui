@@ -255,7 +255,7 @@ bool EndgameManager::loadEndgame(const QString& baseName, EndgameSnapshot& outSt
     loaded.ball = ballState;
     loaded.paddle = padState;
     loaded.ballAttached = attached;
-    loaded.bricks = std::move(bricks);
+    loaded.bricks = move(bricks);
 
     QStringList errors = validate(baseName, loaded);
     if (!errors.isEmpty()) {
@@ -263,7 +263,7 @@ bool EndgameManager::loadEndgame(const QString& baseName, EndgameSnapshot& outSt
         return false;
     }
 
-    outState = std::move(loaded);
+    outState = move(loaded);
     return true;
 }
 

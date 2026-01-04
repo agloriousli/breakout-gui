@@ -261,7 +261,7 @@ void GameEngine::update(double deltaTime) {
 
     if (destroyed > 0) {
         comboStreak_ += destroyed;
-        scoreMultiplier_ = std::clamp(1 + comboStreak_ / 3, 1, 5);
+        scoreMultiplier_ = clamp(1 + comboStreak_ / 3, 1, 5);
         score_ += destroyed * static_cast<int>(kBrickPoints) * scoreMultiplier_ * pointMultiplier_;
         
         // Check each brick for newly destroyed status and spawn assigned powerups
@@ -327,24 +327,24 @@ void GameEngine::applyPowerup(const Powerup& p) {
         newX = clamp(newX, bounds_.left(), bounds_.right() - targetWidth);
         paddle_.setPosition({ newX, paddle_.position().y() });
         // Stack duration with maximum cap of 60 seconds
-        expandTimer_ = std::min(expandTimer_ + kExpandDuration, 60.0);
+        expandTimer_ = min(expandTimer_ + kExpandDuration, 60.0);
         break;
     }
     case PowerupType::ExtraLife: {
-        lives_ = std::min(lives_ + 1, kMaxLives);
+        lives_ = min(lives_ + 1, kMaxLives);
         break;
     }
     case PowerupType::SpeedBoost: {
         // Stack duration with maximum cap of 60 seconds
-        speedBoostTimer_ = std::min(speedBoostTimer_ + kSpeedBoostDuration, 60.0);
+        speedBoostTimer_ = min(speedBoostTimer_ + kSpeedBoostDuration, 60.0);
         ball_.setSpeedPreserveDirection(baseBallSpeed_ * kSpeedBoostMultiplier);
         break;
     }
     case PowerupType::PointMultiplier: {
         // Add +2 to multiplier, capped at max
-        pointMultiplier_ = std::min(pointMultiplier_ + 2, kMaxPointMultiplier);
+        pointMultiplier_ = min(pointMultiplier_ + 2, kMaxPointMultiplier);
         // Stack duration with maximum cap of 60 seconds
-        pointMultiplierTimer_ = std::min(pointMultiplierTimer_ + kPointMultiplierDuration, 60.0);
+        pointMultiplierTimer_ = min(pointMultiplierTimer_ + kPointMultiplierDuration, 60.0);
         break;
     }
     case PowerupType::MultiBall: {
@@ -392,7 +392,7 @@ void GameEngine::updatePowerups(double deltaTime) {
 
     if (powerups_.empty()) return;
 
-    std::vector<Powerup> next;
+    vector<Powerup> next;
     next.reserve(powerups_.size());
     Rect paddleRect = paddle_.bounds();
     for (auto& p : powerups_) {
@@ -443,7 +443,7 @@ bool GameEngine::advanceToNextLevel() {
     return true;
 }
 
-EndgameSnapshot GameEngine::snapshot(const std::string& name, const std::string& configName) const {
+EndgameSnapshot GameEngine::snapshot(const string& name, const string& configName) const {
     EndgameSnapshot snap;
     snap.name = name;
     snap.configName = configName;
@@ -507,7 +507,7 @@ void GameEngine::loadFromSnapshot(const EndgameSnapshot& state) {
     for (const auto& bState : state.bricks) {
         auto b = createBrickFromState(bState);
         if (b) {
-            bricks_.push_back(std::move(b));
+            bricks_.push_back(move(b));
         }
     }
 }

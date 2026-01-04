@@ -84,7 +84,7 @@ vector<unique_ptr<Brick>> LevelManager::buildLevel(int index, double brickWidth,
                         brickHeight };
             auto brick = BrickFactory::createFromChar(symbol, rect);
             if (brick) {
-                bricks.push_back(std::move(brick));
+                bricks.push_back(move(brick));
             }
         }
     }

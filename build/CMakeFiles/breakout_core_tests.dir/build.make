@@ -76,15 +76,15 @@ CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o: CMakeFiles/breakout_c
 CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o: /Users/glorial/breakout-gui/tests/core_tests.cpp
 CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o: CMakeFiles/breakout_core_tests.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/glorial/breakout-gui/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o -MF CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o.d -o CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o -c /Users/glorial/breakout-gui/tests/core_tests.cpp
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o -MF CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o.d -o CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.o -c /Users/glorial/breakout-gui/tests/core_tests.cpp
 
 CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/tests/core_tests.cpp > CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/glorial/breakout-gui/tests/core_tests.cpp > CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.i
 
 CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/tests/core_tests.cpp -o CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/glorial/breakout-gui/tests/core_tests.cpp -o CMakeFiles/breakout_core_tests.dir/tests/core_tests.cpp.s
 
 # Object files for target breakout_core_tests
 breakout_core_tests_OBJECTS = \

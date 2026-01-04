@@ -1168,4 +1168,15 @@
   /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
-  /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
+  /opt/homebrew/Cellar/qtbase/6.9.3_1/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QAudioOutput \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QMediaPlayer \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/QSoundEffect \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qaudio.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qaudiooutput.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qmediaplayer.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qsoundeffect.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtaudio.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimedia-config.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaexports.h \
+  /opt/homebrew/Cellar/qtmultimedia/6.9.3/lib/QtMultimedia.framework/Versions/A/Headers/qtmultimediaglobal.h
