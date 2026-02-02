@@ -1,6 +1,6 @@
 # Breakout Game
 
-A modern implementation of the classic Breakout arcade game built with C++ and Qt 6, featuring dynamic gameplay mechanics, visual effects, power-ups, sound effects, and an intuitive graphical user interface.
+An implementation of the classic Breakout arcade game built with C++ and Qt 6, featuring dynamic gameplay mechanics, visual effects, power-ups, sound effects, and an intuitive graphical user interface.
 
 ## Features Overview
 
